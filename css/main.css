@@ -1,0 +1,472 @@
+@import url('slick.css');
+
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.inp-st {background: #fff; outline: none; height: 60px; width: 100%; padding: 0 0 0 20px; border: 0; vertical-align: middle; font: normal 18px 'Gotham Pro';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;}
+.textarea-st {
+    background: #fff;
+    outline: none;
+    height: 163px;
+    width: 100%;
+    resize: none;
+    padding: 18px 0 0 20px;
+    border: 0;
+    vertical-align: middle;
+    font: normal 15px 'Gotham Pro';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    }
+button {outline: none;}
+
+
+
+body {font-family: 'Gotham Pro';}
+.head {position: fixed; top: 0; left: 0; width: 100%; z-index: 100;}
+    .head-center {max-width: 1170px; margin: 0 auto; padding: 0 20px;}
+        .logo {float: left;}
+        .head-autorize {float: right; padding: 25px 0 0;}
+            .head-autorize li {list-style: none; float: left; margin: 0 0 0 40px; font-size: 18px;}
+                .head-autorize li a {color: #fff; text-decoration: none;}
+                .head-autorize li a:hover {text-decoration: underline;}
+
+.head-cont {position: relative;}
+    .head-sl {position: relative;}
+        .head-sl-item {position: relative; float: left;}
+            .sl-img {width: 100%; vertical-align: top;}
+            .head-sl-txt {position: absolute; left: 0; width: 100%; top: 50%; margin-top: -40px;}
+                .sl-txt {position: absolute; left: 50%; bottom: 0; margin-left: -480px; width: 960px; text-align: center; font-size: 60px; font-weight: bold; color: #fff;}
+            .head-sl .slick-arrow {position: absolute; left: -500px;}
+            .head-sl-btn {position: absolute; height: 0px; width: 1000px; margin: 0 0 0 -500px; z-index: 20; top: 50%; left: 50%;}
+                .head-sl-btn a {position: absolute; display: block; width: 17px; height: 31px; background: url(../img/sl-pointer.png) 0 0 no-repeat; top: -92px;}
+                .head-sl-btn a:hover {opacity: 0.8;}
+                .head-sl-btn a.sl-btn-left {left: 0;}
+                .head-sl-btn a.sl-btn-right {right: 0; background-position: 100% 0;}
+            .head-sl .slick-dots {position: absolute; top: 409px; left: 50%; width: 370px; margin: 0 0 0 -185px; text-align: center; z-index: 70;}
+                .head-sl .slick-dots li {list-style: none; display: inline-block; margin: 0 6px;}
+                    .head-sl .slick-dots li button {font-size: 0; line-height: 0; display: block; width: 16px; height: 16px; padding: 0; cursor: pointer; color: transparent; border: 0; outline: none; background: transparent; position: relative;}
+                        .head-sl .slick-dots li button:before {font-size: 6px; line-height: 20px; position: absolute; content: ' ';
+                            top: 0; left: 0; width: 16px; height: 16px; text-align: center; color: black; background: #fff; opacity: 0.5;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            border-radius: 50%;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;}
+                        .head-sl .slick-dots li.slick-active button:before, .head-sl .slick-dots li:hover button:before {opacity: 1; 
+                            -webkit-box-shadow: 0px 0px 0px 2px #fff;
+                            -moz-box-shadow:    0px 0px 0px 2px #fff;
+                            box-shadow:         0px 0px 0px 2px #fff;}
+    .search-form {position: absolute; top: 65%; left: 50%; width: 960px; margin-left: -480px;}
+        .search-service {float: left; width: 460px; padding: 0 20px 0 0;}
+        .zid-code {float: left; width: 180px;}
+        .search-btn {display: block; float: right; height: 60px; outline: none; width: 280px; background: #4ab14a; border: 0; text-align: center; vertical-align: middle; font: bold 18px 'Gotham Pro'; color: #fff;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-box-shadow: 0 2px rgba(0,0,0,.15);
+            -moz-box-shadow: 0 2px rgba(0,0,0,.15);
+            box-shadow: 0 2px rgba(0,0,0,.15);}
+        .search-btn:hover {
+            -webkit-box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
+            -moz-box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
+            box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);}
+        .example_projects {padding: 18px 0 0; font-size: 15px; color: #fff; opacity: 0.7;}
+            .example_projects a {color: #fff; text-decoration: underline;}
+            .example_projects a:hover {text-decoration: none;}
+            .example_projects span {padding: 0 10px;}
+    .scroll-btn {position: absolute; bottom: 30px; left: 50%; margin: 0 0 0 -15px; width: 30px; height: 92px; background: url(../img/scroll-btn.png) 0 0 no-repeat;}
+
+.service-content {padding: 58px 20px 58px;}
+    .service-wr {max-width: 1170px; margin: 0 auto;}
+        .service-item {position: relative; padding: 0 0 0px 280px; height: 221px; display: table-cell; vertical-align: middle; margin: 0;width: 573px;}
+        .service-item-left {padding: 0 290px 0 320px;}
+            .service-item-vert {display: inline-block; vertical-align: middle; font-size: 18px; line-height: 30px;}
+                .service-item-vert h3 {font-size: 30px; line-height: 36px; font-weight: bold; color: #4ab14a; margin: 0 0 15px;}
+            .service-img {position: absolute; left: 0; top: -3px;}
+            .service-item-left .service-img {left: auto; right: 0;}
+
+.slider-content {}
+    .slider-items {}
+        .slider-item {float: left; position: relative;}
+            .slider-user {padding: 0 0 0 100px; width: 670px; min-height: 95px; position: absolute; bottom: 65px; left: 50%; margin: 0 0 0 -385px; font-size: 18px; color: #fff; z-index: 30;}
+                .slider-user-ava {position: absolute; left: 0; top: 0; width: 80px; height: 80px; overflow: hidden;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    border-radius: 50%;}
+                    .slider-user h3 {margin: 0 0 4px; font-weight: bold; font-size: 24px;}
+        .pointer-img-box {position: absolute; width: 0; height: 0;}
+            .slider-main-img {width: 100%;}
+            .pointer-img {width: 280px; height: 70px; margin: -70px 0 0 -280px; display: block; background: url(../img/pointer-img.png) 0 0 no-repeat; font-size: 18px; text-decoration: none;}
+            .pointer-img-r {background: url(../img/pointer-img-r.png) 0 0 no-repeat; margin: -70px 0 0 0;}
+                .pointer-pay {padding: 0 0 0 20px; height: 50px; display: table-cell; width: 170px; vertical-align: middle; color: #fff;}
+                    .pointer-pay em {font-style: normal;}
+                .pointer-name {float: right; padding: 11px 20px 0 0; white-space: nowrap; color: #111; width: 70px; text-align: right;}
+         .slider-content .slick-arrow {width: 37px; height: 61px; position: absolute; outline: none; border: 0; font-size: 0; top: 50%; margin-top: -30px; z-index: 30;}
+         .slider-content .slick-prev {background: url(../img/sl-l.png) 0 0 no-repeat; left: 35px;}
+         .slider-content .slick-next {background: url(../img/sl-r.png) 0 0 no-repeat; right: 35px;}
+
+         .slider-content .slick-dots {position: absolute; bottom: 22px; left: 50%; width: 370px; margin-left: -185px; text-align: center; z-index: 70;}
+                .slider-content .slick-dots li {list-style: none; display: inline-block; margin: 0 6px;}
+                    .slider-content .slick-dots li button {font-size: 0; line-height: 0; display: block; width: 16px; height: 16px; padding: 0; cursor: pointer; color: transparent; border: 0; outline: none; background: transparent; position: relative;}
+                        .slider-content .slick-dots li button:before {font-size: 6px; line-height: 20px; position: absolute; content: ' ';
+                            top: 0; left: 0; width: 16px; height: 16px; text-align: center; color: black; background: #fff; opacity: 0.5;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            border-radius: 50%;
+                            -webkit-font-smoothing: antialiased;
+                            -moz-osx-font-smoothing: grayscale;}
+                        .slider-content .slick-dots li.slick-active button:before, .slider-content .slick-dots li:hover button:before {opacity: 1; 
+                            -webkit-box-shadow: 0px 0px 0px 2px #fff;
+                            -moz-box-shadow:    0px 0px 0px 2px #fff;
+                            box-shadow:         0px 0px 0px 2px #fff;}
+.contractors {padding: 59px 0 68px;}
+    .contractors-header {text-align: center; padding: 0 0 27px;}
+        .contractors-header strong {font-size: 30px; color: #4ab14a; display: inline-block; vertical-align: top; height: 50px; line-height: 50px;}
+        .contractors-tab {display: inline-block; box-shadow: inset 0 0 0 2px #a4d8a4; padding: 0; margin: 0 0 0 17px; overflow: hidden;
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            border-radius: 25px;}
+            .contractors-tab li {list-style: none; display: block; float: left; font-size: 18px;}
+                .contractors-tab a {display: block; height: 50px; line-height: 50px; text-decoration: none; color: #4ab14a; padding: 0 18px; position: relative;}
+                .contractors-tab li.first a {padding: 0 31px;}
+                .contractors-tab .active a {cursor: default;}
+                .contractors-tab .active a, .contractors-tab li a:hover {background: #4ab14a; color: #fff;}
+    .contractors-cont {max-width: 1170px; margin: 0 auto; padding: 0 20px; overflow: hidden;} 
+        .contractors-cont-i {display: none;}
+            .contractors-list {padding: 0; margin: 0 -130px 0 0;}
+                .contractors-list li {list-style: none; display: inline-block; width: 170px; padding: 0 76px 6px 0; font-size: 15px;}
+                    .contractors-list li a {text-decoration: none; color: #111;}
+.form-page {background: #eceeef; padding: 22px 20px 29px;}
+    .form-page-center {max-width: 1170px; margin: 0 auto;}
+        .form-page h3 {margin: 0 0 12px; font-size: 30px; font-weight: bold; color: #4ab14a;}
+        .feedback {float: right;}
+            .feedback-form {background: #dcdfe0; padding: 17px 30px 27px; width: 340px;margin-top: -6px;}
+                .form-h {font-size: 18px; color: #222; margin: 0 0 1px;}
+                .form-inp {padding: 0 0 23px;}
+                    .form-inp .inp-st {height: 50px; font-size: 15px;}
+                .form-button {display: block; float: right; text-transform: uppercase; height: 60px; width: 100%; background: #4ab14a; border: 0; text-align: center; vertical-align: middle; font: bold 18px 'Gotham Pro'; color: #fff;
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;
+                    -webkit-box-shadow: 0 2px rgba(0,0,0,.15);
+                    -moz-box-shadow: 0 2px rgba(0,0,0,.15);
+                    box-shadow: 0 2px rgba(0,0,0,.15);}
+                .form-button:hover {
+                    -webkit-box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
+                    -moz-box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
+                    box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15); }
+    .form-text {margin: 0 470px 53px 0; position: relative;}
+        .form-text-cont {overflow: hidden; height: 140px; margin: 0 0 10px; font-size: 15px; line-height: 24px;}
+        .text-shadow {position: absolute; bottom: 24px; left: 0; right: 0; background: url(../img/shadow.png) 0 0 repeat-x; height: 15px; border-bottom: 10px solid #eceeef;}
+        .text-open {text-align: right;}
+            .text-open a {margin-right: 16px; position: relative; color: #4ab14a; font-size: 15px; text-decoration: none;}
+            .text-open a:hover {text-decoration: underline;} 
+                .text-open a:before {position: absolute; right: -16px; top: 7px; content: ' '; background: url(../img/pointer-b.png) 0 0 no-repeat; width: 8px; height: 5px;}
+            .text-open span {margin-right: 16px; position: relative; color: #4ab14a; font-size: 15px; text-decoration: none; cursor: pointer; display: none;}
+            .text-open span:hover {text-decoration: underline;} 
+                .text-open span:before {position: absolute; right: -16px; top: 8px; content: ' '; background: url(../img/pointer-b.png) 100% 0 no-repeat; width: 8px; height: 5px;}
+            .form-text.active .text-open a {display: none;}
+            .form-text.active .text-open span {display: inline-block;}
+            .form-text.active .text-shadow {display: none;}
+    .footer {max-width: 1170px; margin: 0 auto; padding: 48px 20px 38px;}
+        .footer-menu {float: left; width: 245px; padding: 0 30px 0 0; margin: 0;}
+            .footer-menu li {list-style: none; padding: 0 0 8px; font-size: 15px;}
+                .footer-menu li a {text-decoration: none; color: #111;}
+                .footer-menu li a:hover {text-decoration: underline;}
+                .footer-menu li span {font-size: 18px; text-transform: uppercase;}
+                .footer-menu li span, .footer-menu li span a {color: #999;}
+        .soc {float: right; width: 300px;padding: 4px 0 0;}
+            .soc-lnk {padding: 0 0 34px; margin: 0 -10px 0 -10px; overflow: hidden;}
+                .soc-lnk li {list-style: none; float: left; padding: 0 0 0 10px;}
+                    .soc-lnk li a {display: block; height: 30px; text-align: center; text-decoration: none; color: #fff; font-size: 15px; line-height: 30px;
+                        -webkit-box-shadow: 0 2px rgba(0,0,0,.15);
+                        -moz-box-shadow: 0 2px rgba(0,0,0,.15);
+                        box-shadow: 0 2px rgba(0,0,0,.15);}
+                    .soc-lnk li a:hover {opacity: 0.9;
+                        -webkit-box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
+                        -moz-box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
+                        box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
+                    }
+                    .soc-lnk li a.soc_fb {background: #3765a3; width: 100px;}
+                    .soc-lnk li a.soc_gplus {background: #df4b38; width: 90px;}
+                    .soc-lnk li a.soc_tw {background: #5ea9dd; width: 90px;}
+            .soc p {margin: 0 0 9px; color: #999; font-size: 15px;}
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .contractors-list li {width: 16%; padding: 0 3% 6px 0;}
+    .contractors-list {margin-right: -80px;}
+
+}
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
