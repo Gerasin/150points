@@ -45,8 +45,13 @@ $(document).ready(function(){
 		$(this).parents('.form-text').addClass('active');
 		return false;
 	});
+	var txtHeight;
 	$('.text-open span').click(function(){
-		var txtHeight = 140;
+		if($(window).width() > 1020) {
+			txtHeight = 140;
+		} else {
+			txtHeight = 130;
+		};
 		$(this).parents('.form-text').find('.form-text-cont').animate({'height' : txtHeight + 'px'});
 		$(this).parents('.form-text').removeClass('active');
 		return false;
@@ -69,5 +74,23 @@ $(document).ready(function(){
    		$(this).attr('placeholder',$(this).data('placeholder'));
  	});
 
+
+ 	$('select').selectik({
+		minScrollHeight: 20
+	});
+
+
+});
+var windScroll;
+$(window).scroll(function(){
+
+	windScroll = $(window).scrollTop();
+	if(windScroll > 10) {
+		$('.head').addClass('active');
+		$('.head-search').fadeIn();
+	} else {
+		$('.head').removeClass('active');
+		$('.head-search').fadeOut();
+	};
 
 });

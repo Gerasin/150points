@@ -1,4 +1,6 @@
 @import url('slick.css');
+@import url('selectik.css');
+
 
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
@@ -118,29 +120,58 @@ textarea {
 button {outline: none;}
 
 
+h1 {font-size: 60px; color: #222; margin: 0 0 36px;}
+h2 {font-size: 30px; color: #4ab14a; margin: 0 0 36px;}
+h3 {font-size: 18px; line-height: 30px; font-weight: normal; color: #222; margin: 0 0 20px;}
+h4 {font-size: 15px; line-height: 24px; font-weight: normal; color: #222; margin: 0 0 15px;}
+
+a {color: #4ab14a; text-decoration: none;}
+a:hover {color: #4ab14a; text-decoration: underline;}
+
 
 body {font-family: 'Gotham Pro';}
 .head {position: fixed; top: 0; left: 0; width: 100%; z-index: 100;}
+.head.active {background: #ededed;
+    -webkit-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,.3);}
     .head-center {max-width: 1170px; margin: 0 auto; padding: 0 20px;}
         .logo {float: left;}
-        .head-autorize {float: right; padding: 25px 0 0;}
-            .head-autorize li {list-style: none; float: left; margin: 0 0 0 40px; font-size: 18px;}
+        .head-autorize {float: right; padding: 25px 0 0; margin: 0;}
+            .head-autorize li {list-style: none; float: left; margin: 0 0 0 40px; font-size: 18px; color: #fff;}
                 .head-autorize li a {color: #fff; text-decoration: none;}
                 .head-autorize li a:hover {text-decoration: underline;}
+                .head.active .head-autorize li a {color: #222;}
+.head-search {margin: 0 240px 0 270px; padding: 15px 50px 0 0; position: relative; display: none;}
+    .head-search .inp-st {height: 40px;}
+    .head-search .search-btn-head {position: absolute; font-size: 0; width: 40px; height: 40px; float: none; top: 15px; right: 0;}
+        .head-search .search-btn-head:before {position: absolute; content: ' '; top: 11px; left: 11px; background: url(../img/zoom.png) 0 0 no-repeat; width: 18px; height: 19px;}
+        .head-search .search-service {width: 70%; padding: 0 10px 0 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .head-search .zid-code {width: 30%; padding: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+
 
 .head-cont {position: relative;}
-    .head-sl {position: relative;}
+    .head-sl {position: relative; z-index: 2;}
         .head-sl-item {position: relative; float: left;}
             .sl-img {width: 100%; vertical-align: top;}
-            .head-sl-txt {position: absolute; left: 0; width: 100%; top: 50%; margin-top: -40px;}
+            .head-sl-txt {position: absolute; left: 0; width: 100%; top: 61%; margin-top: -118px;}
                 .sl-txt {position: absolute; left: 50%; bottom: 0; margin-left: -480px; width: 960px; text-align: center; font-size: 60px; font-weight: bold; color: #fff;}
             .head-sl .slick-arrow {position: absolute; left: -500px;}
-            .head-sl-btn {position: absolute; height: 0px; width: 1000px; margin: 0 0 0 -500px; z-index: 20; top: 50%; left: 50%;}
+            .head-sl-btn {position: absolute; height: 0px; width: 1000px; margin: 0 0 0 -500px; z-index: 20; top: 50%; left: 50%; z-index: 30;}
                 .head-sl-btn a {position: absolute; display: block; width: 17px; height: 31px; background: url(../img/sl-pointer.png) 0 0 no-repeat; top: -92px;}
                 .head-sl-btn a:hover {opacity: 0.8;}
                 .head-sl-btn a.sl-btn-left {left: 0;}
                 .head-sl-btn a.sl-btn-right {right: 0; background-position: 100% 0;}
-            .head-sl .slick-dots {position: absolute; top: 409px; left: 50%; width: 370px; margin: 0 0 0 -185px; text-align: center; z-index: 70;}
+            .head-sl .slick-dots {position: absolute; top: 50%; left: 50%; width: 300px; padding-left: 0; margin: -33px 0 0 -150px; text-align: center; z-index: 70;}
                 .head-sl .slick-dots li {list-style: none; display: inline-block; margin: 0 6px;}
                     .head-sl .slick-dots li button {font-size: 0; line-height: 0; display: block; width: 16px; height: 16px; padding: 0; cursor: pointer; color: transparent; border: 0; outline: none; background: transparent; position: relative;}
                         .head-sl .slick-dots li button:before {font-size: 6px; line-height: 20px; position: absolute; content: ' ';
@@ -154,7 +185,7 @@ body {font-family: 'Gotham Pro';}
                             -webkit-box-shadow: 0px 0px 0px 2px #fff;
                             -moz-box-shadow:    0px 0px 0px 2px #fff;
                             box-shadow:         0px 0px 0px 2px #fff;}
-    .search-form {position: absolute; top: 65%; left: 50%; width: 960px; margin-left: -480px;}
+    .search-form {position: absolute; top: 67%; left: 50%; width: 960px; margin-left: -480px; z-index: 10;}
         .search-service {float: left; width: 460px; padding: 0 20px 0 0;}
         .zid-code {float: left; width: 180px;}
         .search-btn {display: block; float: right; height: 60px; outline: none; width: 280px; background: #4ab14a; border: 0; text-align: center; vertical-align: middle; font: bold 18px 'Gotham Pro'; color: #fff;
@@ -164,10 +195,11 @@ body {font-family: 'Gotham Pro';}
             -webkit-box-shadow: 0 2px rgba(0,0,0,.15);
             -moz-box-shadow: 0 2px rgba(0,0,0,.15);
             box-shadow: 0 2px rgba(0,0,0,.15);}
-        .search-btn:hover {
-            -webkit-box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
-            -moz-box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
-            box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);}
+        .search-btn:hover {background: #56bc56;}
+        .search-btn:active {background: #40a740;
+            -webkit-box-shadow: 0 0 0 rgba(0,0,0,.15);
+            -moz-box-shadow: 0 0 0 rgba(0,0,0,.15);
+            box-shadow: 0 0 0 rgba(0,0,0,.15);}
         .example_projects {padding: 18px 0 0; font-size: 15px; color: #fff; opacity: 0.7;}
             .example_projects a {color: #fff; text-decoration: underline;}
             .example_projects a:hover {text-decoration: none;}
@@ -180,8 +212,11 @@ body {font-family: 'Gotham Pro';}
         .service-item-left {padding: 0 290px 0 320px;}
             .service-item-vert {display: inline-block; vertical-align: middle; font-size: 18px; line-height: 30px;}
                 .service-item-vert h3 {font-size: 30px; line-height: 36px; font-weight: bold; color: #4ab14a; margin: 0 0 15px;}
-            .service-img {position: absolute; left: 0; top: -3px;}
+            .service-img {position: absolute; left: 0; top: -3px; width: 232px; height: 232px;}
             .service-item-left .service-img {left: auto; right: 0;}
+            .service-img.search-ico-1 {background: url(../img/search-ico-1.png) 0 0 no-repeat;}
+            .service-img.search-ico-2 {background: url(../img/search-ico-2.png) 0 0 no-repeat;}
+            .service-img.search-ico-3 {background: url(../img/search-ico-3.png) 0 0 no-repeat;}
 
 .slider-content {}
     .slider-items {}
@@ -191,7 +226,7 @@ body {font-family: 'Gotham Pro';}
                     -webkit-border-radius: 50%;
                     -moz-border-radius: 50%;
                     border-radius: 50%;}
-                    .slider-user h3 {margin: 0 0 4px; font-weight: bold; font-size: 24px;}
+                    .slider-user h3 {margin: 0 0 4px; font-weight: bold; font-size: 24px; color: #fff;}
         .pointer-img-box {position: absolute; width: 0; height: 0;}
             .slider-main-img {width: 100%;}
             .pointer-img {width: 280px; height: 70px; margin: -70px 0 0 -280px; display: block; background: url(../img/pointer-img.png) 0 0 no-repeat; font-size: 18px; text-decoration: none;}
@@ -199,11 +234,12 @@ body {font-family: 'Gotham Pro';}
                 .pointer-pay {padding: 0 0 0 20px; height: 50px; display: table-cell; width: 170px; vertical-align: middle; color: #fff;}
                     .pointer-pay em {font-style: normal;}
                 .pointer-name {float: right; padding: 11px 20px 0 0; white-space: nowrap; color: #111; width: 70px; text-align: right;}
-         .slider-content .slick-arrow {width: 37px; height: 61px; position: absolute; outline: none; border: 0; font-size: 0; top: 50%; margin-top: -30px; z-index: 30;}
+         .slider-content .slick-arrow {width: 37px; height: 61px; position: absolute; outline: none; border: 0; font-size: 0; top: 50%; margin-top: -30px; z-index: 72;}
+         .slider-content .slick-arrow:hover {opacity: 0.7;}
          .slider-content .slick-prev {background: url(../img/sl-l.png) 0 0 no-repeat; left: 35px;}
          .slider-content .slick-next {background: url(../img/sl-r.png) 0 0 no-repeat; right: 35px;}
 
-         .slider-content .slick-dots {position: absolute; bottom: 22px; left: 50%; width: 370px; margin-left: -185px; text-align: center; z-index: 70;}
+         .slider-content .slick-dots {position: absolute; bottom: 22px; left: 50%; width: 300px; margin-left: -150px; text-align: center; z-index: 70; padding: 0px;}
                 .slider-content .slick-dots li {list-style: none; display: inline-block; margin: 0 6px;}
                     .slider-content .slick-dots li button {font-size: 0; line-height: 0; display: block; width: 16px; height: 16px; padding: 0; cursor: pointer; color: transparent; border: 0; outline: none; background: transparent; position: relative;}
                         .slider-content .slick-dots li button:before {font-size: 6px; line-height: 20px; position: absolute; content: ' ';
@@ -227,17 +263,22 @@ body {font-family: 'Gotham Pro';}
             .contractors-tab li {list-style: none; display: block; float: left; font-size: 18px;}
                 .contractors-tab a {display: block; height: 50px; line-height: 50px; text-decoration: none; color: #4ab14a; padding: 0 18px; position: relative;}
                 .contractors-tab li.first a {padding: 0 31px;}
-                .contractors-tab .active a {cursor: default;}
-                .contractors-tab .active a, .contractors-tab li a:hover {background: #4ab14a; color: #fff;}
+                .contractors-tab li a:hover {background: #d1efd1; color: #4ab14a;}
+                .contractors-tab li.active a {background: #4ab14a; color: #fff; cursor: default;}
+                
     .contractors-cont {max-width: 1170px; margin: 0 auto; padding: 0 20px; overflow: hidden;} 
         .contractors-cont-i {display: none;}
             .contractors-list {padding: 0; margin: 0 -130px 0 0;}
                 .contractors-list li {list-style: none; display: inline-block; width: 170px; padding: 0 76px 6px 0; font-size: 15px;}
-                    .contractors-list li a {text-decoration: none; color: #111;}
-.form-page {background: #eceeef; padding: 22px 20px 29px;}
-    .form-page-center {max-width: 1170px; margin: 0 auto;}
+                    .contractors-list li a {text-decoration: none; color: #111; border-bottom: 1px solid #dbeddb; border-color: transparent;}
+                    .contractors-list li a:hover {color: #4ab14a; border-bottom: 1px solid #dbeddb;}
+
+    .slider-main-img-pas {position: relative;}
+
+.form-page {background: #eceeef; padding: 22px 20px 29px; min-height: 560px;}
+    .form-page-center {max-width: 1170px; margin: 0 auto; position: relative;}
         .form-page h3 {margin: 0 0 12px; font-size: 30px; font-weight: bold; color: #4ab14a;}
-        .feedback {float: right;}
+        .feedback {float: right; position: absolute; top: 0; right: 0;}
             .feedback-form {background: #dcdfe0; padding: 17px 30px 27px; width: 340px;margin-top: -6px;}
                 .form-h {font-size: 18px; color: #222; margin: 0 0 1px;}
                 .form-inp {padding: 0 0 23px;}
@@ -249,28 +290,29 @@ body {font-family: 'Gotham Pro';}
                     -webkit-box-shadow: 0 2px rgba(0,0,0,.15);
                     -moz-box-shadow: 0 2px rgba(0,0,0,.15);
                     box-shadow: 0 2px rgba(0,0,0,.15);}
-                .form-button:hover {
-                    -webkit-box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
-                    -moz-box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
-                    box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15); }
+                .form-button:hover {background: #56bc56;}
+                .form-button:active {background: #40a740;
+                    -webkit-box-shadow: 0 0 0 rgba(0,0,0,.15);
+                    -moz-box-shadow: 0 0 0 rgba(0,0,0,.15);
+                    box-shadow: 0 0 0 rgba(0,0,0,.15);}
     .form-text {margin: 0 470px 53px 0; position: relative;}
         .form-text-cont {overflow: hidden; height: 140px; margin: 0 0 10px; font-size: 15px; line-height: 24px;}
         .text-shadow {position: absolute; bottom: 24px; left: 0; right: 0; background: url(../img/shadow.png) 0 0 repeat-x; height: 15px; border-bottom: 10px solid #eceeef;}
         .text-open {text-align: right;}
-            .text-open a {margin-right: 16px; position: relative; color: #4ab14a; font-size: 15px; text-decoration: none;}
-            .text-open a:hover {text-decoration: underline;} 
-                .text-open a:before {position: absolute; right: -16px; top: 7px; content: ' '; background: url(../img/pointer-b.png) 0 0 no-repeat; width: 8px; height: 5px;}
-            .text-open span {margin-right: 16px; position: relative; color: #4ab14a; font-size: 15px; text-decoration: none; cursor: pointer; display: none;}
-            .text-open span:hover {text-decoration: underline;} 
-                .text-open span:before {position: absolute; right: -16px; top: 8px; content: ' '; background: url(../img/pointer-b.png) 100% 0 no-repeat; width: 8px; height: 5px;}
+            .text-open a {padding-right: 16px; position: relative; color: #4ab14a; font-size: 15px; text-decoration: none; border-bottom: 1px solid #cbe0ce; border-color: transparent;}
+            .text-open a:hover {border-bottom: 1px solid #cbe0ce;} 
+                .text-open a:before {position: absolute; right: 0; top: 7px; content: ' '; background: url(../img/pointer-b.png) 0 0 no-repeat; width: 8px; height: 5px;}
+            .text-open span {padding-right: 16px; position: relative; color: #4ab14a; font-size: 15px; text-decoration: none; cursor: pointer; display: none; border-bottom: 1px solid #cbe0ce; border-color: transparent;}
+            .text-open span:hover {border-bottom: 1px solid #cbe0ce;} 
+                .text-open span:before {position: absolute; right: 0; top: 8px; content: ' '; background: url(../img/pointer-b.png) 100% 0 no-repeat; width: 8px; height: 5px;}
             .form-text.active .text-open a {display: none;}
             .form-text.active .text-open span {display: inline-block;}
             .form-text.active .text-shadow {display: none;}
     .footer {max-width: 1170px; margin: 0 auto; padding: 48px 20px 38px;}
-        .footer-menu {float: left; width: 245px; padding: 0 30px 0 0; margin: 0;}
+        .footer-menu {float: left; width: 21%; padding: 0 30px 0 0; margin: 0;}
             .footer-menu li {list-style: none; padding: 0 0 8px; font-size: 15px;}
-                .footer-menu li a {text-decoration: none; color: #111;}
-                .footer-menu li a:hover {text-decoration: underline;}
+                .footer-menu li a {text-decoration: none; color: #111; border-bottom: 1px solid #dbeddb; border-color: transparent;}
+                .footer-menu li a:hover {color: #4ab14a; border-bottom: 1px solid #dbeddb;}
                 .footer-menu li span {font-size: 18px; text-transform: uppercase;}
                 .footer-menu li span, .footer-menu li span a {color: #999;}
         .soc {float: right; width: 300px;padding: 4px 0 0;}
@@ -280,15 +322,27 @@ body {font-family: 'Gotham Pro';}
                         -webkit-box-shadow: 0 2px rgba(0,0,0,.15);
                         -moz-box-shadow: 0 2px rgba(0,0,0,.15);
                         box-shadow: 0 2px rgba(0,0,0,.15);}
-                    .soc-lnk li a:hover {opacity: 0.9;
-                        -webkit-box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
-                        -moz-box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
-                        box-shadow: 0 0 0 rgba(0,0,0,.15), inset 0 2px rgba(0,0,0,.15);
-                    }
                     .soc-lnk li a.soc_fb {background: #3765a3; width: 100px;}
                     .soc-lnk li a.soc_gplus {background: #df4b38; width: 90px;}
                     .soc-lnk li a.soc_tw {background: #5ea9dd; width: 90px;}
+
+                    .soc-lnk li a.soc_fb:hover {background: #4b75ac;}
+                    .soc-lnk li a.soc_gplus:hover {background: #e25d4c;}
+                    .soc-lnk li a.soc_tw:hover {background: #6eb2e0;}
+
+                    .soc-lnk li a.soc_fb:active {background: #315b9a;}
+                    .soc-lnk li a.soc_gplus:active {background: #dc4332;}
+                    .soc-lnk li a.soc_tw:active {background: #54a0da;}
             .soc p {margin: 0 0 9px; color: #999; font-size: 15px;}
+
+.mob-menu {display: none;}
+.search-btn-mob {display: none;}
+.slider-user-pay {display: none;}
+.contractors-mob {display: none; padding-bottom: 40px;}
+.contractors-select {padding: 0 20px;}
+    .contractors-select select {width: 100%;}
+.select-border {border-top: 1px solid #dadada; height: 0; text-align: center; margin: 19px 20px 19px;}
+    .select-border span {padding: 0 12px; background: #fff; color: #999; font-size: 15px; position: relative; top: -13px;}
 
 
 
@@ -296,6 +350,147 @@ body {font-family: 'Gotham Pro';}
 
     .contractors-list li {width: 16%; padding: 0 3% 6px 0;}
     .contractors-list {margin-right: -80px;}
+    .footer-menu {width: 19%;}
+
+}
+
+@media screen and (max-width: 1020px) {
+
+    .sl-txt {font-size: 36px;}
+    .scroll-btn {display: none;}
+    .search-btn {float: none; width: 100%;}
+    .search-form input {margin-bottom: 20px;}
+    .search-service {width: 70%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .zid-code {width: 30%;}
+    .example_projects {text-align: center; height: 24px; overflow: hidden; width: 456px; margin: 0 auto;}
+    .service-img.search-ico-1 {background: url(../img/search-ico-1-m.png) 0 0 no-repeat;}
+    .service-img.search-ico-2 {background: url(../img/search-ico-2-m.png) 0 0 no-repeat;}
+    .service-img.search-ico-3 {background: url(../img/search-ico-3-m.png) 0 0 no-repeat;}
+    .service-img {position: absolute; left: 48px; top: -3px; width: 106px; height: 144px;}
+    .service-item-left {padding: 0 0 0px 280px;}
+    .service-item-left .service-img {right: auto; left: 48px;}
+    .service-item {padding-left: 180px; width: auto; height: auto; vertical-align: top; min-height: 146px; padding-bottom: 20px; display: block;}
+    .service-item-vert h3 {font-size: 24px; line-height: 28px;}
+    .service-item-vert {font-size: 15px; line-height: 22px; padding-top: 7px;}
+    .service-content {padding: 58px 20px 0px;}
+    .slider-user {position: relative; left: auto; background: #36383b; margin: 0; width: auto; bottom: auto; padding: 30px 40px 23px 140px; min-height: 85px;}
+    .slider-user-ava {top: 30px; left: 39px;}
+    .slider-user h3 {font-size: 18px; margin-bottom: 6px;}
+    .slider-user {font-size: 15px; line-height: 22px;}
+    .slider-content .slick-dots {bottom: 160px;}
+    .slider-content .slick-arrow {top: auto; bottom: 170px; width: 17px; height: 25px;}
+    .slider-content .slick-prev {background: url(../img/sl-mob.png) 0 0 no-repeat; left: 50%; margin-left: -136px;}
+    .slider-content .slick-next {background: url(../img/sl-mob.png) 100% 0 no-repeat; left: 50%; right: auto; margin-left: 120px;}
+    .contractors-list li {width: 29%; padding-bottom: 18px;}
+    .sl-txt {margin-left: 0; left: 20px; right: 20px; width: auto;}
+    .head-sl-btn {left: auto; width: 100%; margin: 0;}
+    .head-sl-btn a {top: -29px; width: 17px; height: 25px;}
+    .head-sl-btn a.sl-btn-left {background: url(../img/sl-mob.png) 0 0 no-repeat; left: 50%; margin-left: -136px;}
+    .head-sl-btn a.sl-btn-right {background: url(../img/sl-mob.png) 100% 0 no-repeat; left: 50%; right: auto; margin-left: 120px;}
+    .search-form {left: 70px; right: 70px; width: auto; margin: 0; top: 60%;}
+    .soc {float: none; width: auto; clear: both; padding-top: 23px;}
+    .soc-lnk {float: left;}
+    .copyright { text-align: right; padding-top: 5px;}
+        .copyright p {display: inline;}
+    .soc-lnk {padding-bottom: 0;}
+    .footer-menu li span {font-size: 15px;}
+    .footer-menu {width: 30%; padding-right: 3.3%;}
+    .feedback {position: relative; right: auto; width: auto; clear: both; float: none; background: #36383b; margin: 0 -70px; padding: 28px 70px;}
+    .form-text {margin: 0 0 53px;}
+    .feedback-form {width: auto; padding: 0; background: none;}
+    .form-page {padding-left: 70px; padding-right: 70px; padding-bottom: 0;}
+    .form-h {color: #fff; font-size: 15px; padding-bottom: 4px;}
+    .form-button {float: right; width: 150px; margin-top: -10px; height: 50px;}
+    .form-col {width: 50%; float: left; padding-right: 15px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;}
+    .form-col2 {width: 50%; float: left; padding-left: 15px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;}
+    .inp-st, .textarea-st {padding-left: 15px;}
+    .contractors-cont {padding: 0 70px;}
+    .footer {padding-left: 40px; padding-right: 40px; padding-top: 24px;}
+    .contractors {padding: 28px 0 68px;}
+    .form-page h3 {font-size: 25px;}
+    .feedback h3 {font-size: 30px; margin-bottom: 25px;}
+    .form-text-cont {line-height: 22px; height: 130px;}
+    .footer-menu li {padding-bottom: 9px;}
+    .head-sl-txt {margin-top: -110px;}
+    .head-center {padding: 0 70px;}
+    body .head-search {display: none !important;}
+}
+
+@media screen and (max-width: 610px) {
+
+    .sl-txt {font-size: 24px;}
+    .service-img {height: 125px; position: relative; left: auto; margin: 0 auto;}
+    .service-item {padding: 0; min-height: auto;}
+    .service-item-vert h3 {font-size: 18px; line-height: 22px;}
+    .service-item-vert {text-align: center; padding-bottom: 30px;}
+    .service-item-left .service-img {left: auto;}
+    .example_projects {width: 260px; padding-top: 5px;}
+    .search-form {left: 20px; right: 20px; top: 67%;}
+    .contractors-cont {padding: 0 20px;}
+    .contractors-list {margin: 0;}
+    .contractors-list li {width: auto; padding-right: 0; float: none; display: block;}
+    .head-sl-item {height: 512px;}
+    .sl-img-box {height: 512px; width: 1000px; margin-left: -400px; margin-right: -400px; text-align: center;}
+    .head {position: absolute;}
+    .slick-initialized .slick-slide {overflow: hidden;}
+    .head-sl-txt {margin-top: -58px;}
+    .head-autorize li {font-size: 15px; padding: 0 6px; margin: 0; float: none; display: inline-block;}
+    .head-autorize {float: none; clear: both; text-align: center; margin: 0; padding: 16px 0 0;}
+    .head-center {padding: 20px 20px 0;}
+    .logo {float: none; text-align: center;}
+    .logo img {width: 170px;}
+    .mob-menu {display: inline-block;}
+    .search-form input {margin-bottom: 10px;}
+    .search-form .inp-st, .search-form .search-btn {height: 50px;}
+    .search-form .inp-st {font-size: 15px;}
+    .search-btn-pk {display: none;}
+    .search-btn-mob {display: block;}
+    .search-service {width: 100%; padding: 0;}
+    .zid-code {width: 55%; padding-right: 10px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;}
+    .search-btn-mob {width: 45%;}
+    .head-sl .slick-dots, .head-sl-btn {top: 59%;}
+    .service-content {padding-top: 19px;}
+    .pointer-img-box {display: none;}
+    .slider-main-box {height: 430px; width: 780px; margin-left: -200px; margin-right: -200px; text-align: center;}
+    .slider-content .slick-dots {bottom: auto; top: 340px;}
+    .slider-content .slick-arrow {bottom: auto; top: 390px;}
+    .slider-user-ava {top: -40px; left: 50%; margin-left: -40px;}
+    .slider-user {padding: 55px 20px 20px; text-align: center;}
+    .slider-user-pay {background: #36383b url(../img/border.png) center 0 no-repeat; padding: 25px 20px 0px; display: block;}
+    .pay-item {padding: 0 0 22px 30px; background: url(../img/marker.png) 0 1px no-repeat; color: #fff; font-size: 15px;}
+        .pay-item strong {display: block; float: right; font-size: 18px;}
+    .contractors-header strong {font-size: 20px;}
+    .contractors {padding: 10px 0 20px;}
+    .form-page {padding: 20px 20px 0;}
+    .form-text {margin: 0 0 25px;}
+    .form-col, .form-col2 {padding-right: 0; padding-left: 0; width: 100%;}
+    .form-button {float: none; width: 100%;}
+    .footer-menu {width: 100%; padding: 0 0 10px;}
+    .soc {background: url(../img/border-footer.png) center 0 no-repeat; margin-top: 5px;}
+    .soc-lnk {margin: 0; clear: both; float: none;}
+    .soc-lnk li {float: none; display: block; padding: 0; text-align: center; padding: 0 0 20px;}
+    .soc-lnk li a {display: inline-block;}
+    .copyright p {display: block; text-align: center;}
+    .footer {padding-left: 20px; padding-right: 20px; padding-bottom: 15px;}
+    .contractors-tab {margin: 0;}
+    .feedback {padding-left: 20px; padding-right: 20px; margin: 0 -20px;}
+    .contractors {display: none;}
+    .contractors-mob {display: block; padding-top: 10px;}
+    .contractors-header {padding-bottom: 10px;}
+    body .head-search {display: none !important;}
 
 }
 

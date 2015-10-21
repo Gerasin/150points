@@ -25,21 +25,28 @@
                 <div class="logo"><img src="img/logo.png" alt=""></div>
                 <ul class="head-autorize">
                     <li><a href="">Sign in</a></li>
+                    <li class="mob-menu">/</li>
                     <li><a href="">Sign up</a></li>
                 </ul>
+                <div class="head-search">
+                    <div class="search-service"><input type="text" placeholder="What service do you need?" class="inp-st"></div>
+                    <div class="zid-code"><input type="text" placeholder="Zip code" class="inp-st"></div>
+                    <button class="search-btn search-btn-head">SEARCH</button>
+                    <div class="clearfix"></div>
+                </div>
             </div>
         </div>
         <div class="head-cont">
              <div class="head-sl-btn"><a href="" class="sl-btn-left"></a><a href="" class="sl-btn-right"></a></div>
             <div class="head-sl">
                 <div class="head-sl-item">
-                    <img src="img/sl_1.jpg" alt="" class="sl-img">
+                    <div class="sl-img-box"><img src="img/sl_1.jpg" alt="" class="sl-img"></div>
                     <div class="head-sl-txt">
                         <div class="sl-txt">Remodeling decision engine</div>
                     </div>
                 </div>
                 <div class="head-sl-item">
-                    <img src="img/sl_1.jpg" alt="" class="sl-img">
+                    <div class="sl-img-box"><img src="img/sl_1.jpg" alt="" class="sl-img"></div>
                     <div class="head-sl-txt">
                         <div class="sl-txt">Remodeling decision engine</div>
                     </div>
@@ -48,7 +55,8 @@
             <div class="search-form">
                 <div class="search-service"><input type="text" placeholder="What service do you need?" class="inp-st"></div>
                 <div class="zid-code"><input type="text" placeholder="Zip code" class="inp-st"></div>
-                <button class="search-btn">Instant Recommendation</button>
+                <button class="search-btn search-btn-pk">Instant Recommendation</button>
+                <button class="search-btn search-btn-mob">SEARCH</button>
                 <div class="clearfix"></div>
                 <div class="example_projects">
                     Example projects: <a href="">Fix leaky sink</a> <span>|</span> <a href="">Install carpet</a> <span>|</span> <a href="">Paint my room</a> <span>|</span> <a href="">Repair drywall</a>
@@ -60,7 +68,7 @@
             <div class="service-wr">
                 <div class="service-item">
                     <div class="service-item-vert">
-                        <img src="img/search-ico-1.png" alt="" class="service-img">
+                        <div class="service-img search-ico-1"></div>
                         <h3>Instant Contractor Recommendation</h3>
                         Tell us about your needs and we'll introduce you to several experienced professionals in your area who are ready to complete your project.
                     </div>
@@ -68,7 +76,7 @@
                 <div class="clearfix"></div>
                 <div class="service-item service-item-left">
                     <div class="service-item-vert">
-                        <img src="img/search-ico-2.png" alt="" class="service-img">
+                        <div class="service-img search-ico-2"></div>
                         <h3>Instant Pricing Information</h3>
                         Within hours, interested and available professionals will send you custom quotes. Each quote includes.
                     </div>
@@ -76,7 +84,7 @@
                 <div class="clearfix"></div>
                 <div class="service-item">
                     <div class="service-item-vert">
-                        <img src="img/search-ico-3.png" alt="" class="service-img">
+                        <div class="service-img search-ico-3"></div>
                         <h3>See what your Neighbors thinks</h3>
                         When you're ready, hire an experienced professional at a price that's right for you.
                     </div>
@@ -86,81 +94,103 @@
         <div class="slider-content">
             <div class="slider-items">
                 <div class="slider-item">
-                    <img src="img/slider-item-1.jpg" class="slider-main-img" alt="">
+                    <div class="slider-main-img-pas">
+                        <div class="slider-main-box">
+                            <img src="img/slider-item-1.jpg" class="slider-main-img" alt="">
+                        </div>
+                        <div class="pointer-img-box" style="left: 47%; top: 59%;">
+                            <a href="" class="pointer-img">
+                                <span class="pointer-name"><strong>$930</strong></span>
+                                <span class="pointer-pay"><em>Install lights</em></span>
+                            </a>
+                        </div>
+                        <div class="pointer-img-box" style="left: 65%; top: 81%;">
+                            <a href="" class="pointer-img pointer-img-r">
+                                <span class="pointer-name"><strong>$1,200</strong></span>
+                                <span class="pointer-pay"><em>Install flooring </em></span>
+                            </a>
+                        </div>
+                        <div class="pointer-img-box" style="left: 61%; top: 15%;">
+                            <a href="" class="pointer-img">
+                                <span class="pointer-name"><strong>$770</strong></span>
+                                <span class="pointer-pay"><em>Painted wall</em></span>
+                            </a>
+                        </div>
+                    </div>
                     <div class="slider-user">
                         <div class="slider-user-ava"><img src="img/ava.png" alt=""></div>
                         <h3>Abigail repaired structural damage in Seattle, WA</h3>
                         "We needed to repair some severe damage in our studio. Our job manager quickly found a high quality pro who was prompt and did a great job."
                     </div>
-                    <div class="pointer-img-box" style="left: 47%; top: 59%;">
-                        <a href="" class="pointer-img">
-                            <span class="pointer-name"><strong>$930</strong></span>
-                            <span class="pointer-pay"><em>Install lights</em></span>
-                        </a>
-                    </div>
-                    <div class="pointer-img-box" style="left: 65%; top: 81%;">
-                        <a href="" class="pointer-img pointer-img-r">
-                            <span class="pointer-name"><strong>$1,200</strong></span>
-                            <span class="pointer-pay"><em>Install flooring </em></span>
-                        </a>
-                    </div>
-                    <div class="pointer-img-box" style="left: 61%; top: 15%;">
-                        <a href="" class="pointer-img">
-                            <span class="pointer-name"><strong>$770</strong></span>
-                            <span class="pointer-pay"><em>Painted wall</em></span>
-                        </a>
+                    <div class="slider-user-pay">
+                        <div class="pay-item">
+                            <strong>$1,200</strong>
+                            Install flooring
+                        </div>
+                        <div class="pay-item">
+                            <strong>$930</strong>
+                            Install lights
+                        </div>
+                        <div class="pay-item">
+                            <strong>$770</strong>
+                            Painted wall
+                        </div>
                     </div>
                 </div>
                 <div class="slider-item">
-                    <img src="img/slider-item-1.jpg" class="slider-main-img" alt="">
+                    <div class="slider-main-img-pas">
+                        <img src="img/slider-item-1.jpg" class="slider-main-img" alt="">
+                        <div class="pointer-img-box" style="left: 47%; top: 59%;">
+                            <a href="" class="pointer-img">
+                                <span class="pointer-name"><strong>$930</strong></span>
+                                <span class="pointer-pay"><em>Install lights</em></span>
+                            </a>
+                        </div>
+                        <div class="pointer-img-box" style="left: 65%; top: 81%;">
+                            <a href="" class="pointer-img pointer-img-r">
+                                <span class="pointer-name"><strong>$1,200</strong></span>
+                                <span class="pointer-pay"><em>Install flooring </em></span>
+                            </a>
+                        </div>
+                        <div class="pointer-img-box" style="left: 61%; top: 15%;">
+                            <a href="" class="pointer-img">
+                                <span class="pointer-name"><strong>$770</strong></span>
+                                <span class="pointer-pay"><em>Painted wall</em></span>
+                            </a>
+                        </div>
+                    </div>
                     <div class="slider-user">
                         <div class="slider-user-ava"><img src="img/ava.png" alt=""></div>
                         <h3>Abigail repaired structural damage in Seattle, WA</h3>
                         "We needed to repair some severe damage in our studio. Our job manager quickly found a high quality pro who was prompt and did a great job."
-                    </div>
-                    <div class="pointer-img-box" style="left: 47%; top: 59%;">
-                        <a href="" class="pointer-img">
-                            <span class="pointer-name"><strong>$930</strong></span>
-                            <span class="pointer-pay"><em>Install lights</em></span>
-                        </a>
-                    </div>
-                    <div class="pointer-img-box" style="left: 65%; top: 81%;">
-                        <a href="" class="pointer-img pointer-img-r">
-                            <span class="pointer-name"><strong>$1,200</strong></span>
-                            <span class="pointer-pay"><em>Install flooring </em></span>
-                        </a>
-                    </div>
-                    <div class="pointer-img-box" style="left: 61%; top: 15%;">
-                        <a href="" class="pointer-img">
-                            <span class="pointer-name"><strong>$770</strong></span>
-                            <span class="pointer-pay"><em>Painted wall</em></span>
-                        </a>
                     </div>
                 </div>
                 <div class="slider-item">
-                    <img src="img/slider-item-1.jpg" class="slider-main-img" alt="">
+                    <div class="slider-main-img-pas">
+                        <img src="img/slider-item-1.jpg" class="slider-main-img" alt="">
+                        <div class="pointer-img-box" style="left: 47%; top: 59%;">
+                            <a href="" class="pointer-img">
+                                <span class="pointer-name"><strong>$930</strong></span>
+                                <span class="pointer-pay"><em>Install lights</em></span>
+                            </a>
+                        </div>
+                        <div class="pointer-img-box" style="left: 65%; top: 81%;">
+                            <a href="" class="pointer-img pointer-img-r">
+                                <span class="pointer-name"><strong>$1,200</strong></span>
+                                <span class="pointer-pay"><em>Install flooring </em></span>
+                            </a>
+                        </div>
+                        <div class="pointer-img-box" style="left: 61%; top: 15%;">
+                            <a href="" class="pointer-img">
+                                <span class="pointer-name"><strong>$770</strong></span>
+                                <span class="pointer-pay"><em>Painted wall</em></span>
+                            </a>
+                        </div>
+                    </div>
                     <div class="slider-user">
                         <div class="slider-user-ava"><img src="img/ava.png" alt=""></div>
                         <h3>Abigail repaired structural damage in Seattle, WA</h3>
                         "We needed to repair some severe damage in our studio. Our job manager quickly found a high quality pro who was prompt and did a great job."
-                    </div>
-                    <div class="pointer-img-box" style="left: 47%; top: 59%;">
-                        <a href="" class="pointer-img">
-                            <span class="pointer-name"><strong>$930</strong></span>
-                            <span class="pointer-pay"><em>Install lights</em></span>
-                        </a>
-                    </div>
-                    <div class="pointer-img-box" style="left: 65%; top: 81%;">
-                        <a href="" class="pointer-img pointer-img-r">
-                            <span class="pointer-name"><strong>$1,200</strong></span>
-                            <span class="pointer-pay"><em>Install flooring </em></span>
-                        </a>
-                    </div>
-                    <div class="pointer-img-box" style="left: 61%; top: 15%;">
-                        <a href="" class="pointer-img">
-                            <span class="pointer-name"><strong>$770</strong></span>
-                            <span class="pointer-pay"><em>Painted wall</em></span>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -290,21 +320,36 @@
                 </div>
             </div>
         </div>
+        <div class="contractors-mob">
+            <div class="contractors-header">
+                <strong>Find Local Contractors</strong>
+            </div>
+            <div class="contractors-select">
+                <select name="" id="">
+                    <option value="1">Top cities</option>
+                    <option value="2">Atlanta, GA</option>
+                    <option value="3">San Antonio, TX</option>
+                    <option value="4">Minneapolis, MN</option>
+                    <option value="5">Jacksonville, FL</option>
+                    <option value="6">Columbus, OH</option>
+                    <option value="7">Denver, CO</option>
+                </select>
+            </div>
+            <div class="select-border"><span>or</span></div>
+            <div class="contractors-select">
+                <select name="" id="">
+                    <option value="1">All 50 states</option>
+                    <option value="2">Atlanta, GA</option>
+                    <option value="3">San Antonio, TX</option>
+                    <option value="4">Minneapolis, MN</option>
+                    <option value="5">Jacksonville, FL</option>
+                    <option value="6">Columbus, OH</option>
+                    <option value="7">Denver, CO</option>
+                </select>
+            </div>
+        </div>
         <div class="form-page">
             <div class="form-page-center">
-                <div class="feedback">
-                    <h3>Feedback</h3>
-                    <div class="feedback-form">
-                        <div class="form-h">Name</div>
-                        <div class="form-inp"><input type="text" placeholder="Enter you name" class="inp-st"></div>
-                        <div class="form-h">Email adress</div>
-                        <div class="form-inp"><input type="text" placeholder="Enter email" class="inp-st"></div>
-                        <div class="form-h">Message</div>
-                        <div class="form-inp"><textarea name="" id="" cols="30" rows="10" placeholder="Leave a feedback" class="textarea-st"></textarea></div>
-                        <button class="form-button">Submit</button>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
                 <div class="form-text">
                     <h3>Homeowner?</h3>
                     <div class="form-text-cont">
@@ -326,6 +371,24 @@
                         <div class="text-shadow"></div>
                     </div>
                     <div class="text-open"><a href="">Read more</a><span>Close</span></div>
+                </div>
+                <div class="feedback">
+                    <h3>Feedback</h3>
+                    <div class="feedback-form">
+                        <div class="form-col">
+                            <div class="form-h">Name</div>
+                            <div class="form-inp"><input type="text" placeholder="Enter you name" class="inp-st"></div>
+                        </div>
+                        <div class="form-col2">
+                            <div class="form-h">Email adress</div>
+                            <div class="form-inp"><input type="text" placeholder="Enter email" class="inp-st"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form-h">Message</div>
+                        <div class="form-inp"><textarea name="" id="" cols="30" rows="10" placeholder="Leave a feedback" class="textarea-st"></textarea></div>
+                        <button class="form-button">Submit</button>
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -358,8 +421,10 @@
                     <li><a href="" class="soc_gplus">Google+</a></li>
                     <li><a href="" class="soc_tw">Twitter</a></li>
                 </ul>
-                <p>150 Points Inc. © 2015.</p>
-                <p>All Rights Reserved</p>
+                <div class="copyright">
+                    <p>150 Points Inc. © 2015.</p>
+                    <p>All Rights Reserved</p>
+                </div>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -369,6 +434,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/slick.js"></script>
+        <script src="js/jquery.selectik.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
