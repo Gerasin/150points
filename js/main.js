@@ -1,6 +1,17 @@
+function slSize(){
+	var windWidth = $(window).width();
+	var windHeight = $(window).height();
+	$('.head-sl-item').css({'width' : windWidth, 'height' : windHeight});
+};
+$(window).resize(function(){
+	slSize()
+});
+
 $(document).ready(function(){
 
 	// Слайдер в шапке
+	slSize();
+
 	$('.head-sl').slick({
 	  	dots: true,
 	  	infinite: true,
@@ -79,6 +90,11 @@ $(document).ready(function(){
 		minScrollHeight: 20
 	});
 
+	$('.search-mob').click(function(){
+		$('.head-search').addClass('active');
+		return false;
+	});
+
 
 });
 var windScroll;
@@ -90,7 +106,16 @@ $(window).scroll(function(){
 		$('.head-search').fadeIn();
 	} else {
 		$('.head').removeClass('active');
-		$('.head-search').fadeOut();
+		if($('.head-search').hasClass('active')) {} else {
+			$('.head-search').fadeOut();
+		};
 	};
+
+	$('.close').click(function(){
+		$('.head-search').removeClass('active');
+		return false;
+	});
+
+	setTimeout("$('select').css({'left' : -5000 + 'px'});", 400);
 
 });

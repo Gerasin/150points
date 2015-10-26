@@ -451,7 +451,7 @@
 				var $select = $list.children('select');
 				$select.data('selectik').hideCS();
 				mouseTrigger = false;
-			}
+			};
 		}
 	});
 })(jQuery);
