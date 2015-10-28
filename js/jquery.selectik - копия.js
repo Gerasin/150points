@@ -7,7 +7,7 @@
 	var selectControl = false;
 	var trigger = false;
 	var mouseTrigger = false;
-	var isMobile = (/android|iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));
+	var isMobile;
 	var isOpera = (/opera/i.test(navigator.userAgent.toLowerCase()));
 	var isIE = (/msie/i.test(navigator.userAgent.toLowerCase()));
 	var isOperaMini  = Object.prototype.toString.call(window.operamini) === "[object OperaMini]";
@@ -451,7 +451,7 @@
 				var $select = $list.children('select');
 				$select.data('selectik').hideCS();
 				mouseTrigger = false;
-			}
+			};
 		}
 	});
 })(jQuery);

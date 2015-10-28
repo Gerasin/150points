@@ -98,10 +98,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.inp-st {background: #fff; outline: none; height: 60px; width: 100%; padding: 0 0 0 20px; border: 0; vertical-align: middle; font: normal 18px 'Gotham Pro';
+.inp-st {background: #fff; outline: none; height: 60px; width: 100%; padding: 0 0 0 20px; border: 0; vertical-align: middle; font: normal 16px 'GothamPro';
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;}
+input {font: normal 16px 'GothamPro' !important;}
 .textarea-st {
     background: #fff;
     outline: none;
@@ -366,6 +367,11 @@ body {font-family: 'GothamPro';}
 .search-mob {position: absolute; top: 9px ;right: 10px; display: none;}
 .close {position: absolute; top: 22px; right: 15px; width: 15px; height: 15px; background: url(../img/close.png) 0 0 no-repeat; display: none;}
 
+.contractors-select select {border: 1px solid #a4d8a4; background: #fff; height: 49px; color: #4ab14a; outline: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;}
+
 
 @media screen and (max-width: 1200px) {
 
@@ -471,7 +477,7 @@ body {font-family: 'GothamPro';}
 
 @media screen and (max-width: 610px) {
 
-    .sl-txt {font-size: 24px;}
+    .sl-txt {font-size: 24px; line-height: 25px;}
     .service-img {height: 125px; position: relative; left: auto; margin: 0 auto;}
     .service-item {padding: 0; min-height: auto;}
     .service-item-vert h3 {font-size: 18px; line-height: 22px;}
@@ -545,6 +551,12 @@ body {font-family: 'GothamPro';}
     .head-search.active .search-btn-head {right: 30px;}
     .close {right: 7px;}
 
+}
+
+@media screen and (max-height: 320px) {
+    .head-sl-txt {
+        margin-top: -39px;
+    }
 }
 
 
