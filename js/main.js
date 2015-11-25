@@ -110,7 +110,7 @@ $(window).scroll(function(){
 		$('.head-search').fadeIn();
 	} else {
 		$('.head').removeClass('active');
-		if($(window) > 1020) {
+		if($(window).width() > 1020) {
 			if($('.head-search').hasClass('active')) {} else {
 				$('.head-search').fadeOut();
 			};
