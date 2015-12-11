@@ -76,14 +76,6 @@ $(document).ready(function(){
 		return false;
 	});
 
-	// placeholder
-	/*$('input, textarea').focus(function(){
-   		$(this).data('placeholder',$(this).attr('placeholder'))
-   		$(this).attr('placeholder','');
- 	});
- 	$('input, textarea').blur(function(){
-   		$(this).attr('placeholder',$(this).data('placeholder'));
- 	});*/
 
 
  	$('select').selectik({
@@ -97,7 +89,59 @@ $(document).ready(function(){
 
 	jQuery('body').bind('focusin focus', function(e){
 	  e.preventDefault();
-	})
+	});
+
+
+	$('.filter-h a').click(function(){
+		$(this).parents('.filter-cat').find('.filter-select').fadeToggle();
+		$(this).parent().toggleClass('active');
+		return false;
+	});
+	$('.filter-select a').click(function(){
+		var thisIn = $(this).parents('.filter-cat')
+		var actHeader = $(this).text();
+		thisIn.find('.filter-h a').text(actHeader);
+		thisIn.find('.filter-select a').removeClass('active');
+		$(this).parent().addClass('active');
+		thisIn.find('.filter-select').fadeOut();
+		thisIn.find('.filter-h').removeClass('active');
+		return false;
+	});
+
+
+	// Меню в мобильном
+	$('.menu-mob-lnk').click(function(){
+		$('.menu-mob').slideDown();
+		return false;
+	});
+	$('.menu-mob-close').click(function(){
+		$('.menu-mob').slideUp();
+		return false;
+	});
+
+
+	// Попап
+	var popupOpen;
+	$(".popup_open").click(function(){
+		$('.popup:visible').fadeOut(200);
+		popupStatus = 0;
+		popupOpen = $(this).attr('rel');
+		loadPopup(popupOpen);
+		var popupTop = $(window).scrollTop() + 70;
+		$(popupOpen).css({'top' : popupTop + 'px'});
+		return false;
+	});
+	$(".popup_close, .popup-close, .popup_bg, .close").click(function(){
+		disablePopup();
+		return false;
+	});
+	$(document).keypress(function(e){
+		if(e.keyCode==27 && popupStatus==1){
+			disablePopup();
+		}
+	});
+
+
 
 
 });
@@ -125,3 +169,50 @@ $(window).scroll(function(){
 	setTimeout("$('select').css({'left' : -5000 + 'px'});", 400);
 
 });
+
+
+
+$(document).mouseup(function(e){
+  	var container = $(".filter-cat"); 
+  		if (!container.is(e.target) && container.has(e.target).length === 0){
+      	$('.filter-select').fadeOut();
+      	$('.filter-h').removeClass('active');
+  	};
+
+
+}); 
+
+$('body').bind( "touchend", function(e){
+	var container = $(".filter-cat"); 
+  		if (!container.is(e.target) && container.has(e.target).length === 0){
+      	$('.filter-select').fadeOut();
+      	$('.filter-h').removeClass('active');
+  	};
+
+
+}); 
+
+
+
+
+// Попап
+var popupStatus = 0;
+
+function loadPopup(popupOpen){
+	if(popupStatus==0){
+		$(".popup_bg").css({
+			"opacity": "0.7"
+		});
+		$(".popup_bg").fadeIn(200);
+		$(popupOpen).fadeIn(200);
+		popupStatus = 1;
+	}
+}
+
+function disablePopup(){
+	if(popupStatus==1){
+		$(".popup_bg").fadeOut(200);
+		$(".popup").fadeOut(200);
+		popupStatus = 0;
+	}
+}

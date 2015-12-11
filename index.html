@@ -25,9 +25,9 @@
             <div class="head-center">
                 <div class="logo"><img src="img/logo.png" alt=""></div>
                 <ul class="head-autorize">
-                    <li><a href="">Sign in</a></li>
+                    <li><a href="" class="popup_open" rel="#autorize">Sign in</a></li>
                     <li class="mob-menu">/</li>
-                    <li><a href="">Sign up</a></li>
+                    <li><a href="" class="popup_open" rel="#register">Sign up</a></li>
                 </ul>
                 <div class="head-search">
                     <div class="search-service"><input type="text" placeholder="What service do you need?" class="inp-st"></div>
@@ -429,6 +429,71 @@
             </div>
             <div class="clearfix"></div>
         </div>
+
+
+
+        <div id="autorize" class="popup">
+            <div class="popup-padding">
+                <a href="" class="popup_close"></a>
+                <div class="popup-header">Sign In</div>
+                <div class="soc-autorize"><a href="" class="soc-fb">Login with Facebook</a></div>
+                <div class="popup-form">
+                    <div class="popup-form-in">
+                        <div class="form-item">
+                            <div class="form-item-head">Email address</div>
+                            <div class="form-item-inp"><input type="text" class="inp-st"></div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-head">Password</div>
+                            <div class="form-item-inp"><input type="password" class="inp-st"></div>
+                            <div class="forgot_password"><a href="">Forgot password?</a></div>
+                        </div>
+                        <div class="form-button-box"><button class="form-button">Continue</button></div>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    I don’t have an account. <a href="" class="popup_open" rel="#register">Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div id="register" class="popup">
+            <div class="popup-padding">
+                <a href="" class="popup_close"></a>
+                <div class="popup-header">Create a new user profile</div>
+                <div class="popup-form popup-form-reg">
+                    <div class="popup-form-in">
+                        <div class="form-item">
+                            <div class="form-item-head">First name</div>
+                            <div class="form-item-inp"><input type="text" class="inp-st"></div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-head">Last name</div>
+                            <div class="form-item-inp error-inp"><input type="text" class="inp-st" value="1123"><div class="com-error-inp">Incorrect value</div></div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-head">Email address</div>
+                            <div class="form-item-inp"><input type="text" class="inp-st"></div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-head">Password</div>
+                            <div class="form-item-inp"><input type="password" class="inp-st"></div>
+                        </div>
+                        <div class="form-item">
+                            <div class="form-item-head">Verify password</div>
+                            <div class="form-item-inp"><input type="password" class="inp-st"></div>
+                        </div>
+                        <div class="form-captcha">
+                            <img src="img/captcha.jpg" alt="">
+                        </div>
+                        <div class="form-button-box"><button class="form-button">Create profile</button></div>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    Already have an account? <a href="" class="popup_open" rel="#autorize">Sign In</a>
+                </div>
+            </div>
+        </div>
+        <div class="popup_bg"></div>
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
