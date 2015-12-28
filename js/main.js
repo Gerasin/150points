@@ -149,7 +149,7 @@ var windScroll;
 $(window).scroll(function(){
 
 	windScroll = $(window).scrollTop();
-	if(windScroll > 10) {
+	if(windScroll > $('.head-sl').height()) {
 		$('.head').addClass('active');
 		$('.head-search').fadeIn();
 	} else {

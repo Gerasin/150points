@@ -145,6 +145,11 @@ body input:focus, body textarea:focus {
     -moz-box-shadow: inset 0 0 0 1px #b0b2b3;
     box-shadow: inset 0 0 0 1px #b0b2b3;
 }
+body .inp-error {
+    -webkit-box-shadow: inset 0 0 0 1px red;
+    -moz-box-shadow: inset 0 0 0 1px red;
+    box-shadow: inset 0 0 0 1px red;
+}
 
 
 .st-btn {display: inline-block; text-decoration: none; float: right; height: 33px; outline: none; background: #4ab14a; border: 0; text-align: center; vertical-align: middle; font: normal 15px/33px 'GothamPro'; color: #fff;
@@ -172,6 +177,9 @@ body {font-family: 'GothamPro';}
     box-shadow: 0 4px 6px rgba(0,0,0,.3);}
     .head-center {max-width: 1170px; margin: 0 auto; padding: 0 20px;}
         .logo {float: left;}
+            .logo_2 {display: none;}
+            .head.active .logo_1 {display: none;}
+            .head.active .logo_2 {display: inline;}
         .head-autorize {float: right; padding: 25px 0 0; margin: 0;}
             .head-autorize li {list-style: none; float: left; margin: 0 0 0 40px; font-size: 18px; color: #fff;}
                 .head-autorize li a {color: #fff; text-decoration: none;}
