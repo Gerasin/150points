@@ -833,7 +833,7 @@ body {font-family: 'GothamPro';}
     .head.active  .head-autorize {padding: 0 0 10px;}
     .head.active  .head-center {padding: 9px 20px 0;}
     .logo {float: none; text-align: center;}
-    .logo img {width: 170px;}
+    .logo img {height: 55px;}
     .mob-menu {display: inline-block;}
     .search-form input {margin-bottom: 10px;}
     .search-form .inp-st, .search-form .search-btn {height: 50px; line-height: 47px;}
