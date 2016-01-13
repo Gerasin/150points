@@ -178,7 +178,7 @@ body {font-family: 'GothamPro';}
     .head-center {max-width: 1170px; margin: 0 auto; padding: 0 20px;}
         .logo {float: left;}
             .logo_2 {display: none;}
-            .logo_1 {display: block; width: 123px; height: 92px; background: url(../img/150P_logo_w.svg) 0 0 no-repeat;}
+            .logo_1 {display: block; width: 123px; height: 92px; background: url(../img/logo_big_w.svg) 0 0 no-repeat; margin: 0 auto;}
             .head.active .logo_1 {display: none;}
             .head.active .logo_2 {display: inline;}
         .head-autorize {float: right; padding: 25px 0 0; margin: 0;}
@@ -398,7 +398,7 @@ body {font-family: 'GothamPro';}
     border-radius: 5px;}
 
 /*------------ companies -----------*/
-.head-inner {background: #ededed; border-bottom: 1px solid #ededed;}
+.head-inner {background: #ededed;}
     .head-inner .head-autorize li a {color: #222;}
         .search-city {float: right; padding: 15px 0 0;}
             .search-city .inp-st {float: left; width: 162px; height: 40px; margin: 0 10px 0 0;}
