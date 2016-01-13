@@ -178,6 +178,7 @@ body {font-family: 'GothamPro';}
     .head-center {max-width: 1170px; margin: 0 auto; padding: 0 20px;}
         .logo {float: left;}
             .logo_2 {display: none;}
+            .logo_1 {display: block; width: 123px; height: 92px; background: url(../img/150P_logo_w.svg) 0 0 no-repeat;}
             .head.active .logo_1 {display: none;}
             .head.active .logo_2 {display: inline;}
         .head-autorize {float: right; padding: 25px 0 0; margin: 0;}
