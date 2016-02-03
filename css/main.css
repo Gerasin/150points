@@ -178,7 +178,7 @@ body {font-family: 'GothamPro';}
     .head-center {max-width: 1170px; margin: 0 auto; padding: 0 20px;}
         .logo {float: left;}
             .logo_2 {display: none;}
-            .logo_1 {display: block; width: 123px; height: 92px; background: url(../img/logo_big_w.svg) 0 0 no-repeat; margin: 0 auto;}
+            .logo_1 {display: block; width: 123px; height: 92px; background: url(../img/logo_big_w.svg) 0 15px no-repeat; margin: 0 auto; border-top: 10px solid #4ab14a; padding-top: 15px;}
             .head.active .logo_1 {display: none;}
             .head.active .logo_2 {display: inline;}
         .head-autorize {float: right; padding: 25px 0 0; margin: 0;}
@@ -462,7 +462,7 @@ body {font-family: 'GothamPro';}
         .company-text {margin: 0 260px 0 172px; padding: 17px 0 0; font-size: 15px;}
             .company-text a {border-bottom: 1px solid #dbeddb; text-decoration: none;}
             .company-text a:hover {border-color: transparent;}
-            .company-detal {position: relative; padding: 0 0 0 24px; margin: 0 0 5px -24px; overflow: hidden; max-height: 62px; display: block;}
+            .company-detal {position: relative;padding: 0 0 0 20px;margin: 0 0 8px -24px; overflow: hidden; max-height: 62px; display: block;}
                 .detal-ico {position: absolute; left: 0; top: 4px;}
                     .detal-ico img {vertical-align: top;}
 
@@ -587,6 +587,133 @@ body {font-family: 'GothamPro';}
 .popup-message .popup-header {text-align: center; padding-bottom: 78px;}
 .popup-message-txt {text-align: center; padding: 0 0 100px; margin: 0 auto 35px; max-width: 550px; font-size: 18px; line-height: 30px; border-bottom: 1px solid #cdcdcd;}
 
+
+.crubs {padding: 0 0 15px; font-size: 15px; color: #888;}
+    .crubs span {padding: 0px 7px;}
+.page-cont {border: 1px solid #e6e6e6; padding: 19px;}
+    .page-cont-left {float: left;width: 76%;}
+        .page-cont-left .company-text {margin: 0 0 0 180px; padding: 0;}
+            .page-cont-left .company-logo {border: 1px solid #dcdcdc; width: 158px; padding: 0; margin: 0;}
+                .page-cont-left .company-logo img {width: 158px; vertical-align: top;}
+                .page-cont-left .company-detal {margin-left: 0;}
+        .company-txt-name {padding: 0 0 19px; top: -8px; position: relative; font-size: 15px; color: #888;}
+            .company-txt-name h1 {font-size: 30px; padding: 0;margin: 0 0 -6px; color: #222;}
+        .page-tabs {height: 26px; border-bottom: 5px solid #ededed; margin: 0 0 25px;}
+            .lnk-setting {display: block; float: right; position: relative;}
+                .lnk-setting:before {position: absolute; content: ' '; background: url(../img/ico-setting.png) 0 0 no-repeat; width: 18px; height: 18px; top: 2px; left: -28px;}
+            .page-tabs ul {padding: 0; margin: 0;}
+                .page-tabs li {list-style: none; float: left; display: block;height: 25px; padding: 0 30px 0 0;}
+                    .page-tabs li a {display: inline-block;height: 27px;}
+                    .page-tabs li.active a {border-bottom: 5px solid #4ab14a; font-weight: bold; text-decoration: none; color: #222; cursor: default; margin-bottom: -5px;}
+    .page-cont .company-body {border: 0;margin: 0 0 19px;}
+        .text-style {}
+            .text-style h2 {margin: 0 0 22px; padding: 0;}
+            .text-style h3 {margin: 0 0 3px; padding: 0; font-size: 15px; line-height: 22px; font-family: 'GothamPro-Bold';}
+            .text-style p {line-height: 22px; margin: 0 0 22px;}
+            .tag-service {margin: 0 0 22px; display: block;padding: 12px 0 0; overflow: hidden;}
+                .tag-service li {float: left; list-style: none; display: inline-block;padding: 0 10px 8px 0;}
+                    .tag-service li a {
+                        display: inline-block;
+                        height: 26px;
+                        line-height: 26px;
+                        text-decoration: none;
+                        padding: 0 6px;
+                        background: #cfecf8;
+                        color: #222;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        border-radius: 3px;
+                        }
+    .page-cont-right {float: right;width: 22%;}
+        .page-cont-right .company-rating {position: relative; top: auto; right: auto; width: auto;padding: 0 0 9px;}
+            .page-cont-right .company-rating .st-btn {margin: 0 0 23px;}
+            .page-cont-right .company-rating .rating-namber {padding-bottom: 1px;}
+            .page-cont-right .company-rating .st-btn {height: 50px; line-height: 50px;}
+            .page-cont-right .company-rating  .recommended-btn {
+                width: 200px;
+                margin: 6px auto 15px;
+                height: 33px;
+                line-height: 33px;
+                float: none;
+                -webkit-border-radius: 16px;
+                -moz-border-radius: 16px;
+                border-radius: 16px;
+                }
+    .company-map {padding: 0 0 30px;}
+    .license_info {background: #f6f4ed;padding: 10px 20px 0 21px; margin: 0 0 20px;}
+        .license_info-header {font-size: 18px; color: #a3a29d;margin: 0 0 17px;padding: 0 0 0 39px; position: relative;}
+            .license_info-header:before {position: absolute; content: ' '; width: 33px; height: 38px;top: -19px; left: 0; background: url(../img/ico-doc.png) 0 0 no-repeat;}
+        .license-item {padding: 0 0 15px;line-height: 22px;}
+            .license-item h3 {font-size: 15px; margin: 0; padding: 0; font-family: 'GothamPro-Bold'; line-height: 22px;}
+    .comp-soc {padding: 0 0 10px;}
+        .comp-soc-item {padding: 0 0 10px;}
+            .comp-soc-item a {display: block; height: 40px; line-height: 40px; text-decoration: none; border: 0; position: relative; color: #fff; padding-left: 12px; text-align: center;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;}
+            .comp-soc-item a:hover {opacity: 0.9;}
+            .comp-soc-item.fb a {background: #3c5899;}
+            .comp-soc-item.tw a {background: #41abe1;}
+            .comp-soc-item.in a {background: #0177b5;}
+            .comp-soc-item.yelp a {background: #b4282e;}
+                .comp-soc-item a img {position: absolute; left: 14px; top: 8px; vertical-align: top; }
+    .review {margin: 0 0 16px; border-bottom: 1px dashed #dadada; padding-bottom: 10px;}
+        .review-name {margin: 0 0 18px; font: 18px 'GothamPro-Bold'; color: #4ab14a;}
+        .review p {margin: 0 0 10px;}
+
+    .review-form {background: #eee; padding: 20px 20px 0;}
+        .review-form-table {width: 100%; margin: 0; padding: 0; border: 0;}
+            .review-form-table th {text-align: left; vertical-align: top; padding: 0 0 20px; font-weight: normal; font-family: 'GothamPro-Bold';}
+            .review-form-table td {padding: 0 0 20px;}
+                .review-textarea {width: 100%; border: 0; padding: 10px; height: 100px; 
+                    -webkit-box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    box-sizing: border-box;}
+                .date-select {width: 140px; margin: 0 20px 0 0; float: left; position: relative; z-index: 20;}
+                    .date-select select {width: 140px;}
+                .project-select {width: 300px; float: left;}
+                    .project-select select {width: 300px;} 
+        .review-form .custom-select .custom-text, .review-form .custom-select.disabled span.custom-text:hover {border-color: #fff; color: #222;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;}
+            .review-form .custom-select .custom-text:after {background: url(../img/sel_pointer-w.png) 0 0 no-repeat;}
+        .review-form p {margin: 0 0 14px;}
+        body .review-btn {float: right; display: block; border: 0; height: 49px; line-height: 49px; padding: 0 35px; font-family: 'GothamPro-Bold' !important;}
+input[type='radio'] {position: absolute; left: -10000px;}
+input[type='radio'] + label {padding-left: 30px; margin-right: 20px; position: relative; color: #222;}
+input[type='radio'] + label:before {position: absolute; left: 0; top: 1px; content: ' '; width: 15px; height: 15px; background: url(../img/radio.png) 0 100% no-repeat;}
+input[type='radio']:checked + label:before {background-position: 0 0;} 
+
+.star {line-height: 24px; height: 24px;}
+    .star input {display: none;}
+    .star-item {float: left; background: url(../img/star.png) 0 -125px no-repeat;}
+    .star-act-1 .star-item {background-position: 0 -100px;} 
+    .star-act-2 .star-item {background-position: 0 -75px;} 
+    .star-act-3 .star-item {background-position: 0 -50px;} 
+    .star-act-4 .star-item {background-position: 0 -25px;} 
+    .star-act-5 .star-item {background-position: 0 0;} 
+        .star-item i {display: block; float: left; width: 30px; height: 23px; cursor: pointer;}
+    .star-comment {float: left;}
+        .star-comment span {display: none;}
+        .star-act-1 .star-1 {color: #cec346; display: block;}
+        .star-act-2 .star-2 {color: #cec346; display: block;}
+        .star-act-3 .star-3 {color: #cec346; display: block;}
+        .star-act-4 .star-4 {color: #a3ce46; display: block;}
+        .star-act-5 .star-5 {color: #4ab14a; display: block;}
+.star-act {float: right; height: 24px; background: url(../img/star-act.png) 100% -125px no-repeat; padding-right: 156px; font-size: 15px; line-height: 23px;}
+.star-act-1.star-act {background-position: 100% -100px;} 
+.star-act-2.star-act {background-position: 100% -75px;} 
+.star-act-3.star-act {background-position: 100% -50px;} 
+.star-act-4.star-act {background-position: 100% -25px;} 
+.star-act-5.star-act {background-position: 100% 0;} 
+.star-act.star-act-1 {color: #cec346;}
+.star-act.star-act-2 {color: #cec346;}
+.star-act.star-act-3 {color: #cec346;}
+.star-act.star-act-4 {color: #a3ce46;}
+.star-act.star-act-5 {color: #4ab14a;}
+
+            
     
 @media screen and (min-width: 980px) {
 .company:hover {margin: 0 -10px; cursor: pointer;
@@ -738,7 +865,15 @@ body {font-family: 'GothamPro';}
     .head-inner .head-autorize li {margin-left: 24px; font-size: 15px;}
     .row-next .search-bg .add-form-box {padding-right: 20px; padding-bottom: 20px; padding-top: 12px;}
     .row-next .add-form-search {position: relative; top: auto; right: auto; clear: both; width: auto;}
-    
+    .page-cont-right {width: 28%;}
+    .page-cont-left {width: 70%;}
+    body .review-btn {float: none;}
+    .project-select {float: none; padding-bottom: 20px;}
+    .review-form-table th {font-size: 13px; padding-right: 5px; width: 150px;}
+    .review-form-table td {font-size: 13px;}
+    .date-select {width: 130px;}
+    .project-select select {width: 290px;}
+    .review-form p {margin: 0 0 5px;}
 }
 
 @media screen and (max-width: 980px) {
@@ -760,6 +895,32 @@ body {font-family: 'GothamPro';}
     .form-column {padding-right: 40px;}
     .company-rating .search-result-btn {float: left; padding-top: 0;}
     .search-result-cont .company-rating {clear: both; padding-left: 23px; padding-top: 0;}
+}
+
+
+@media screen and (max-width: 767px) {
+    .page-cont-right {width: 100%; float: none;}
+    .page-cont-left {width: 100%; float: none; margin-bottom: 15px;}
+    .page-cont-left .company-text {margin-left: 0;}
+    .page-cont-right .company-rating .st-btn {margin: 0 auto 23px; float: none; display: block; width: 200px;}
+    .page-cont-right .company-rating .rating-namber {display: block; text-align: center;}
+    .page-tabs {height: auto; border: 0; margin-bottom: 10px;}
+        .page-tabs li {float: none; margin: 0 0 12px;}
+    .tag-service li a {display: inline; padding: 6px;}
+    .page-cont {padding: 0; border: 0;}
+    .review-form-table th {display: block; width: auto;}
+        .review-form-table th br {display: none;}
+    .review-form-table td {display: block;}
+    .project-select select {width: 100%; height: 30px;}
+    .date-select {float: none; width: auto; margin: 0 0 5px;}
+    .date-select select {height: 30px;}
+    .project-select {width: 100%;}
+    input[type='radio'] + label {display: block;}
+    body .review-btn {width: 100%;}
+    .star-act {clear: both;}
+    .review-name {clear: both; padding-top: 5px;}
+
+
 }
 
 @media screen and (max-width: 720px) {
@@ -830,7 +991,9 @@ body {font-family: 'GothamPro';}
     .head-sl-txt {margin-top: -58px;}
     .head-autorize li {font-size: 15px; padding: 0 6px; margin: 0; float: none; display: inline-block;}
     .head-autorize {float: none; clear: both; text-align: center; margin: 0; padding: 16px 0 0;}
-    .head-center {padding: 20px 20px 0;}
+    .head-center {padding: 0px 20px 0;}
+    .head-autorize {display: none;}
+    .head.active .head-autorize {display: block;}
     .head.active  .head-autorize {padding: 0 0 10px;}
     .head.active  .head-center {padding: 9px 20px 0;}
     .logo {float: none; text-align: center;}

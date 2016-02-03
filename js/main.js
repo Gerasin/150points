@@ -142,6 +142,26 @@ $(document).ready(function(){
 	});
 
 
+	// tabs
+	$('.tabs-item:not(:first)').hide();
+	$('.page-tabs li a').click(function(){
+		$('.tabs-item').hide();
+		var tabOpen = $(this).attr('href');
+		$(tabOpen).show();
+		$(this).parents('ul').find('li.active').removeClass('active');
+		$(this).parent('li').addClass('active');
+		return false;
+	})
+
+	// оейтинг
+	$('.star-item i').hover(function(){
+		var sratHover = $(this).index();
+		sratHover = ++sratHover;
+		var starClass = 'star ' + 'star-act-' + sratHover;
+		$(this).parents('.star').attr('class', starClass);
+		$(this).parents('.star').find('input').val(sratHover);
+	});
+
 
 
 });

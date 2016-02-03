@@ -130,6 +130,7 @@
 	-moz-border-radius: 5px;
 	border-radius: 		5px; 
 	color: #4ab14a;
+	z-index: 50;
 	}
 	.custom-select {height: 48px;}
 .select-list .selected,
