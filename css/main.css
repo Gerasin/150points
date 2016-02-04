@@ -748,6 +748,8 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
         .search-city-mob .form-button {height: 40px; width: 52px; margin: 0; bottom: 0; right: 0; position: absolute;}
         .mob-txt {display: none;}
 .mob-show {display: none;}
+.cont-soc {}
+    .cont-soc a {margin: 0 10px 10px 0; display: inline-block;}
 
 
 
