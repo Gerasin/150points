@@ -606,7 +606,8 @@ body {font-family: 'GothamPro';}
                     .page-tabs li a {display: inline-block;height: 27px;}
                     .page-tabs li.active a {border-bottom: 5px solid #4ab14a; font-weight: bold; text-decoration: none; color: #222; cursor: default; margin-bottom: -5px;}
     .page-cont .company-body {border: 0;margin: 0 0 19px;}
-        .text-style {}
+        .text-style {word-break: break-word;}
+            .text-style img {max-width: 160px; margin-bottom: 10px;}
             .text-style h2 {margin: 0 0 22px; padding: 0;}
             .text-style h3 {margin: 0 0 3px; padding: 0; font-size: 15px; line-height: 22px; font-family: 'GothamPro-Bold';}
             .text-style p {line-height: 22px; margin: 0 0 22px;}
@@ -749,7 +750,50 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
         .mob-txt {display: none;}
 .mob-show {display: none;}
 .cont-soc {}
-    .cont-soc a {margin: 0 10px 10px 0; display: inline-block;}
+    .cont-soc a {margin: 0 10px 10px 0; display: inline-block; position: relative; color: #fff; line-height: 40px; height: 40px; padding: 0 20px 0 50px; font-size: 15px; 
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px}
+        .cont-soc a:before {position: absolute; content: ' '; top: 6px; left: 8px; width: 32px; height: 28px;}
+        .cont-soc a.lnk_fb:before {background: url(../img/fb.png) -8px -6px no-repeat;}
+        .cont-soc a.lnk_twit:before {background: url(../img/twit.png) -8px -6px no-repeat;}
+        .cont-soc a.lnk_inst:before {background: url(../img/inst.png) -8px -6px no-repeat;}
+        .cont-soc a.lnk_yelp:before {background: url(../img/yelp.png) -8px -6px no-repeat;}
+        .cont-soc a.lnk_houzz:before {background: url(../img/houzz.png) -8px -6px no-repeat;}
+        .cont-soc a.lnk_hom:before {background: url(../img/hom.png) -8px -6px no-repeat;}
+        .cont-soc a.lnk_gplus:before {background: url(../img/gplus.png) -8px -6px no-repeat;}
+        .cont-soc a.lnk_bbb:before {background: url(../img/bbb.png) -8px -6px no-repeat;}
+
+        .cont-soc a.lnk_fb {background: #3c5899;}
+        .cont-soc a.lnk_twit {background: #41abe1;}
+        .cont-soc a.lnk_inst {background: #0177b5;}
+        .cont-soc a.lnk_yelp {background: #b4282e;}
+        .cont-soc a.lnk_houzz {background: #000;}
+        .cont-soc a.lnk_hom {background: #b9c1c5;}
+        .cont-soc a.lnk_gplus {background: #fff; box-shadow: inset 0 0 1px 1px #cdcdcd; color: #df4634;}
+        .cont-soc a.lnk_bbb {background: #005a79;}
+
+.lnk-back {display: none; padding: 0 0 24px;}
+    .lnk-back a {text-decoration: none;}
+.mobile-show {display: none;}
+.rating-mob {display: none;}
+.company-mob {display: none; padding: 8px 0 0;}
+    .company-mob .st-btn {font-size: 18px; font-family: 'GothamPro-Bold'; height: 40px; line-height: 40px; text-align: center; float: none; display: block; margin: 0 0 18px;}
+.map-mobile {display: none;}
+.company-images {display: none; margin: 0 0 20px;}
+    .company-logo-mob {float: left; width: 190px; border: 1px solid #dcdcdc;}
+        .company-logo-mob img {width: 100%;}
+.company-photo {margin: 0 0 0 210px; max-width: 150px;}
+    .company-photo-item {margin: 0 0 10px; position: relative;} 
+        .company-photo-item img {width: 100%; vertical-align: top;}
+        .photo-item-namber {position: absolute; top: 0; left: 0; width: 100%; height: 100%; font-size: 30px; color: #fff; border: 0; text-decoration: none; background: rgba(0, 0, 0, 0.5); text-align: center; vertical-align: middle;}
+            .photo-item-namber span {width: 100%; position: absolute; left: 0; top: 50%; width: 100%; margin-top: -21px;}
+.mobile-select {display: none; position: relative; border: 2px solid #a4d8a4; padding: 12px 0 12px 12px; color: #4ab14a; cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;}
+    .mobile-select:before {position: absolute; top: 15px; right: 14px; content: ' '; width: 8px; height: 16px; background: url(../img/sel_pointer.png) 0 0 no-repeat;}
+
 
 
 
@@ -897,6 +941,49 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .form-column {padding-right: 40px;}
     .company-rating .search-result-btn {float: left; padding-top: 0;}
     .search-result-cont .company-rating {clear: both; padding-left: 23px; padding-top: 0;}
+
+
+    .crubs {display: none;}
+    .lnk-back {display: block;}
+    .mobile-hide {display: none;}
+    .mobile-show {display: inline-block;}
+    .company-txt-name h1 {font-size: 18px; font-family: 'GothamPro-Bold'; margin: 0 0 3px;}
+    .rating-mob {display: block; padding-bottom: 18px; min-height: 30px;}
+    .rating-mob .rating-namber {padding: 0; font-size: 15px; float: left; width: 82px;}
+        .rating-mob .rating-namber span {font-family: 'GothamPro-Bold';}
+    .rating-mob .st-btn {padding: 0 14px; font-size: 13px; border: 0; float: left;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;}
+    .company-mob {display: block;}
+    .map-mobile {display: block; margin: 0 -20px;}
+    .company-images {display: block;}
+    .compani-phote {display: none;}
+    .text-style p {font-size: 15px; line-height: 20px;}
+    .tag-service li a {background: none; padding: 0; font-size: 15px; color: #657b84; display: inline;}
+    .tag-service li {padding: 0; color: #657b84; display: inline; float: none; line-height: 20px;}
+        .tag-service li:after {content: ','}
+        .tag-service li:last-child:after {display: none;}
+    .page-cont-right {display: none;}
+    .page-tabs {height: auto; border: 0; margin-bottom: 10px;}
+        .page-tabs li {float: none; height: auto; padding: 0;}
+    .mobile-select {display: block;}
+    .page-tabs ul {position: absolute; right: 20px; left: 20px; border: 2px solid #a4d8a4; background: #fff; padding: 0; display: none;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;}
+    .page-tabs li a {padding: 7px 12px; display: block; float: none; height: auto;}
+    .page-tabs li.active a {border: 0; margin: 0;}
+    .text-style {padding-top: 12px;}
+    .page-cont .company-body {margin: 0;}
+    .cont-soc a {font-size: 0; padding: 0; width: 40px;}
+    .cont-soc a:before {left: 4px;}
+    .cont-soc a.lnk_gplus:before {left: 1px;}
+    .cont-soc a.lnk_bbb:before {left: 7px;}
+    .cont-soc a.lnk_fb:before {left: 4px;}
+    .cont-soc a {margin-right: 7px;}
+    .footer-inner {margin-top: 20px;}
+
 }
 
 
@@ -906,9 +993,6 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .page-cont-left .company-text {margin-left: 0;}
     .page-cont-right .company-rating .st-btn {margin: 0 auto 23px; float: none; display: block; width: 200px;}
     .page-cont-right .company-rating .rating-namber {display: block; text-align: center;}
-    .page-tabs {height: auto; border: 0; margin-bottom: 10px;}
-        .page-tabs li {float: none; margin: 0 0 12px;}
-    .tag-service li a {display: inline; padding: 6px;}
     .page-cont {padding: 0; border: 0;}
     .review-form-table th {display: block; width: auto;}
         .review-form-table th br {display: none;}

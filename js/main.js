@@ -150,8 +150,17 @@ $(document).ready(function(){
 		$(tabOpen).show();
 		$(this).parents('ul').find('li.active').removeClass('active');
 		$(this).parent('li').addClass('active');
+		var tabName = $(this).text();
+		$('.mobile-select').text(tabName);
+		if($(window).width() < 980) {
+			$('.page-tabs ul').fadeOut();
+		}
 		return false;
-	})
+	});
+	$('.mobile-select').click(function(){
+		$('.page-tabs ul').fadeToggle();
+		$('.page-tabs ul').addClass('ul-mob');
+	});
 
 	// оейтинг
 	$('.star-item i').hover(function(){
