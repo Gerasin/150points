@@ -162,7 +162,7 @@ $(document).ready(function(){
 		$('.page-tabs ul').addClass('ul-mob');
 	});
 
-	// оейтинг
+	// рейтинг
 	$('.star-item i').hover(function(){
 		var sratHover = $(this).index();
 		sratHover = ++sratHover;
@@ -170,6 +170,24 @@ $(document).ready(function(){
 		$(this).parents('.star').attr('class', starClass);
 		$(this).parents('.star').find('input').val(sratHover);
 	});
+	
+
+	// Открытие подробного поиска
+	$('.calculate-open').hide();
+	$('.filt-open').click(function(){
+		$('.calculate-open').slideDown();
+		$('.filt-open').hide();
+		$('.filt-close').show();
+		return false;
+	});
+	$('.filt-close').click(function(){
+		$('.calculate-open').slideUp();
+		$('.filt-close').hide();
+		$('.filt-open').show();
+		return false;
+	});
+
+
 
 
 

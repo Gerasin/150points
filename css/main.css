@@ -2,6 +2,7 @@
 @import url('selectik.css');
 
 
+
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -640,6 +641,10 @@ body {font-family: 'GothamPro';}
                 -moz-border-radius: 16px;
                 border-radius: 16px;
                 }
+        .page-cont-right .btn-yellow {color: #51430a; font-size: 18px; font-family: 'GothamPro-Bold';}
+        .page-cont-right .btn-yellow {background: #f7c910;}
+        .page-cont-right .btn-yellow:hover {background: #f8ea16;}
+        .page-cont-right .btn-yellow:active {background: #e6d914;}
     .company-map {padding: 0 0 30px;}
     .license_info {background: #f6f4ed;padding: 10px 20px 0 21px; margin: 0 0 20px;}
         .license_info-header {font-size: 18px; color: #a3a29d;margin: 0 0 17px;padding: 0 0 0 39px; position: relative;}
@@ -659,7 +664,7 @@ body {font-family: 'GothamPro';}
             .comp-soc-item.yelp a {background: #b4282e;}
                 .comp-soc-item a img {position: absolute; left: 14px; top: 8px; vertical-align: top; }
     .review {margin: 0 0 16px; border-bottom: 1px dashed #dadada; padding-bottom: 10px;}
-        .review-name {margin: 0 0 18px; font: 18px 'GothamPro-Bold'; color: #4ab14a;}
+        .review-name {margin: 0 0 18px; font: 18px 'GothamPro-Bold'; color: #4ab14a; float: left;}
         .review p {margin: 0 0 10px;}
 
     .review-form {background: #eee; padding: 20px 20px 0;}
@@ -794,7 +799,66 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     border-radius: 5px;}
     .mobile-select:before {position: absolute; top: 15px; right: 14px; content: ' '; width: 8px; height: 16px; background: url(../img/sel_pointer.png) 0 0 no-repeat;}
 
-
+.h1  {position: relative; z-index: 5;}
+.calculate  {position: relative; z-index: 1; margin: 0px auto 20px; height: 255px;}
+    .calculate-cont {background: url(../img/calculate.png) 0 0 no-repeat; width: 759px; height: 255px; margin: 0 auto; position: relative;}
+    .low_end {position: absolute;top: 147px;left: -45px;width: 203px; text-align: right; color: #f2820a; font-size: 15px; line-height: 26px; font-family: 'GothamPro-Bold'; text-transform: uppercase;}
+    .mid_range {position: absolute;top: 92px;left: 256px; width: 244px; text-align: center; color: #4ab14a; font-size: 15px; line-height: 26px; font-family: 'GothamPro-Bold'; text-transform: uppercase;}
+    .high_end {position: absolute;top: 146px;left: 599px; text-align: left; color: #e10a19; font-size: 15px; line-height: 26px; font-family: 'GothamPro-Bold'; text-transform: uppercase;}
+        .low_end strong, .mid_range strong, .high_end strong {font-size: 24px; position: relative; display: block;}
+    .mid_range-h {position: absolute; top: -27px; left: 0; font-size: 15px; text-transform: uppercase; font-family: 'GothamPro-Bold';}
+    .mid_range-mon {position: absolute; top: -6px; left: 0; font-size: 24px; font-family: 'GothamPro-Bold'; padding-right: 8px;background: #fff;}
+        .mid_range-mon:before {position: absolute; content: ' '; left: 100%; top: 16px; width: 135px; border-top: 2px solid #ccc;}
+.calculate_cost {background: #edf6f9; padding: 20px; margin: 0 0 20px;}
+    .calculate_cost-h {padding: 0 0 0 52px; margin-left: 3px; height: 40px; background: url(../img/calculate-ico.png) 0 center no-repeat; font: normal 24px/40px 'GothamPro-Bold'; color: #c8d6db; float: left;}
+    .calculate-input-box {float: left; padding: 0 0 0 35px;}
+        .calculate-input-h {float: left; padding: 0 20px 0 0; height: 40px; line-height: 40px; color: #888; font-size: 15px;}
+        .calculate-input {float: left; height: 40px; background: #fff; padding: 0 12px 0 15px;}
+            body .calculate-input input {height: 40px; width: 40px; font-family: 'GothamPro-Bold' !important; padding: 0; font-size: 15px !important; outline: none; font-weight: normal; color: #222; border: 0;
+                    -webkit-box-shadow: inset 0 0 0 0 #b0b2b3 !important;
+                    -moz-box-shadow: inset 0 0 0 0 #b0b2b3 !important;
+                    box-shadow: inset 0 0 0 0 #b0b2b3 !important;}
+            .calculate-input span {color: #888; font-size: 15px; line-height: 40px;}
+    .calculate-button {float: right;}
+        .calculate-button .st-btn {height: 40px; width: 210px; font-family: 'GothamPro-Bold'; line-height: 40px;}
+.calculate-open {border-top: 1px solid #d7e2e6; padding: 20px 0 0; margin: 20px 0 0;}
+    .calculate-column {float: left; width: 380px; padding-right: 30px;}
+        .calculate-form {height: 60px;}
+            .calculate-form-h {float: left; width: 180px; height: 40px; line-height: 40px; color: #888; font-size: 15px;}
+            .calculate-form-inp {float: left; width: 200px;}
+                .calculate-form-inp select {width: 200px; height: 40px;}
+                .calculate-form-inp .custom-select .custom-text:after {background: url(../img/select-pointer.png) 0 0 no-repeat; top: 13px;}
+                .calculate-form-inp .custom-select .custom-text, .calculate-form-inp .custom-select.disabled span.custom-text:hover {height: 40px; border: 0; line-height: 40px; color: #222; font-family: 'GothamPro-Bold';
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    border-radius: 0;}
+                .calculate-form-inp .select-list.custom-scroll {color: #222; font-family: 'GothamPro-Bold';}
+                .calculate-form-inp .select-list .selected, .calculate-form-inp .select-list li:hover{color: #a4d8a4}
+        .calculate-column-min .calculate-form-h {width: 140px;}
+        .calculate-column-min {width: 340px; padding-right: 0;}
+    .calc-form-inp {float: left; padding: 0 50px 20px 0; height: 40px;}
+        .calc-form-inp-h {float: left; height: 40px; line-height: 40px; font-size: 15px; color: #888; padding: 0 20px 0 0;}
+        .calc-form-inp input {float: left; width: 90px; height: 40px; padding: 0 15px 0 15px; background: #fff; border: 0 !important; outline: none;
+            -webkit-box-shadow: inset 0 0 0 0 #b0b2b3 !important;
+            -moz-box-shadow: inset 0 0 0 0 #b0b2b3 !important;
+            box-shadow: inset 0 0 0 0 #b0b2b3 !important;}
+        .calculate-search .st-btn {height: 40px; width: 210px; font-family: 'GothamPro-Bold'; line-height: 40px; float: none;}
+    .filt-close {display: none;}
+    .calc_clear {display: none;}
+.box-show_more {padding: 20px 0 0; text-align: center;}
+    .btn-show_more {display: block; text-align: center; border: 1px solid #d6e2d6; text-decoration: none; height: 50px; line-height: 50px; font-family: 'GothamPro-Bold'; background-color: #eff8ef; text-transform: uppercase; font-size: 15px; color: #4ab14a; margin-bottom: 24px;
+        -webkit-box-shadow: 0 2px rgba(0,0,0,.05);
+        -moz-box-shadow: 0 2px rgba(0,0,0,.05);
+        box-shadow: 0 2px rgba(0,0,0,.05);}
+    .btn-show_more:hover {text-decoration: none; background: #ddf8ef;} 
+    .btn-show_more:active {background: #d1eae2;}
+    .lnk-show_more {font-size: 15px; text-decoration: none; border-bottom: 1px solid #dbeddb;}
+    .lnk-show_more:hover {border-color: transparent; text-decoration: none;}
+    .company-body .st-btn {
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        border-radius: 16px;
+    }
 
 
 
@@ -806,6 +870,10 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .head-sl .slick-dots {top: 55%;}
     .col-md-6 {float: none; padding: 0 0 20px; width: auto;}
     .add-form-marg {margin: 0;}
+    .calc_clear {display: block;}
+    .calculate-input-box {padding: 0 35px 0 0;}
+    .calculate_cost-h {margin-bottom: 20px;}
+
 
 }
 @media screen and (max-width: 1050px) {
@@ -942,14 +1010,14 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .company-rating .search-result-btn {float: left; padding-top: 0;}
     .search-result-cont .company-rating {clear: both; padding-left: 23px; padding-top: 0;}
 
-
+    .lnk-back {padding-bottom: 20px;}
     .crubs {display: none;}
     .lnk-back {display: block;}
     .mobile-hide {display: none;}
     .mobile-show {display: inline-block;}
-    .company-txt-name h1 {font-size: 18px; font-family: 'GothamPro-Bold'; margin: 0 0 3px;}
+    .company-txt-name h1 {font-size: 18px; font-family: 'GothamPro-Bold'; margin: 0;}
     .rating-mob {display: block; padding-bottom: 18px; min-height: 30px;}
-    .rating-mob .rating-namber {padding: 0; font-size: 15px; float: left; width: 82px;}
+    .rating-mob .rating-namber {padding: 0; font-size: 20px; float: left; width: 107px; margin-top: 3px;}
         .rating-mob .rating-namber span {font-family: 'GothamPro-Bold';}
     .rating-mob .st-btn {padding: 0 14px; font-size: 13px; border: 0; float: left;
     -webkit-border-radius: 16px;
@@ -983,7 +1051,16 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .cont-soc a.lnk_fb:before {left: 4px;}
     .cont-soc a {margin-right: 7px;}
     .footer-inner {margin-top: 20px;}
+    .calculate {display: none;}
+    .calc-form-inp-h {width: 180px; padding-right: 0;}
 
+}
+
+@media screen and (max-width: 840px) {
+    .calculate-column {float: none; }
+    .calculate-column-min .calculate-form-h {width: 180px;}
+    .calculate-column-min {width: 380px;}
+    .calc-form-inp {float: none;}
 }
 
 
@@ -1003,9 +1080,12 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .project-select {width: 100%;}
     input[type='radio'] + label {display: block;}
     body .review-btn {width: 100%;}
-    .star-act {clear: both;}
+    .star-act {margin-bottom: 20px;}
     .review-name {clear: both; padding-top: 5px;}
-
+    .calculate-input-box {padding: 20px 0 0; float: none; height: 40px;}
+    .calculate_cost-h {margin-bottom: 0;}
+    .head-padding {height: 70px;}
+    .company-txt-name {padding-bottom: 4px;}
 
 }
 
@@ -1137,6 +1217,7 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .company-rating .st-btn {width: 160px; font-size: 13px;}
     .head-inner .logo {float: left;}
     .menu-mob-lnk {margin-top: 17px;}
+    .head-inner .head-autorize {display: none !important;}
     .company-head {padding: 6px 10px 7px 10px;}
     .company-name {font-size: 13px;}
     .company-name strong {font-size: 15px; display: block;}
@@ -1161,6 +1242,14 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .search-none-h {float: none; padding-bottom: 10px;}
     .search-none-btn {float: none; width: 100%; text-align: center; padding: 0;}
     .search-none {padding-top: 5px;}
+    .calculate-button {float: none; margin-top: 20px;}
+    .calculate-form-h {float: none;}
+    .calculate-form-inp {float: none; margin-bottom: 10px;}
+    .calculate-form {height: auto;}
+    .calculate-search {padding-top: 20px;}
+    .calculate-column {width: auto; padding-right: 0;}
+    .calculate-form-inp select {width: 100%;}
+    .calculate-form-inp {width: 100%;}
 }
 
 @media screen and (max-height: 320px) {
