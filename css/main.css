@@ -666,6 +666,7 @@ body {font-family: 'GothamPro';}
     .review {margin: 0 0 16px; border-bottom: 1px dashed #dadada; padding-bottom: 10px;}
         .review-name {margin: 0 0 18px; font: 18px 'GothamPro-Bold'; color: #4ab14a; float: left;}
         .review p {margin: 0 0 10px;}
+        body .review-date {color: #888; font-size: 15px; font-weight: normal; font-family: 'GothamPro'; padding-left: 16px; margin-left: 13px; border-left: 1px solid #888;}
 
     .review-form {background: #eee; padding: 20px 20px 0;}
         .review-form-table {width: 100%; margin: 0; padding: 0; border: 0;}
@@ -685,6 +686,7 @@ body {font-family: 'GothamPro';}
             border-radius: 0;}
             .review-form .custom-select .custom-text:after {background: url(../img/sel_pointer-w.png) 0 0 no-repeat;}
         .review-form p {margin: 0 0 14px;}
+        .inp-style {border: 0; height: 49px; width: 282px; padding-left: 18px;}
         body .review-btn {float: right; display: block; border: 0; height: 49px; line-height: 49px; padding: 0 35px; font-family: 'GothamPro-Bold' !important;}
 input[type='radio'] {position: absolute; left: -10000px;}
 input[type='radio'] + label {padding-left: 30px; margin-right: 20px; position: relative; color: #222;}
@@ -707,7 +709,7 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
         .star-act-3 .star-3 {color: #cec346; display: block;}
         .star-act-4 .star-4 {color: #a3ce46; display: block;}
         .star-act-5 .star-5 {color: #4ab14a; display: block;}
-.star-act {float: right; height: 24px; background: url(../img/star-act.png) 100% -125px no-repeat; padding-right: 156px; font-size: 15px; line-height: 23px;}
+.star-act {float: right; height: 24px; background: url(../img/star-act.png) 100% -125px no-repeat; padding-right: 137px; font-size: 15px; line-height: 23px;}
 .star-act-1.star-act {background-position: 100% -100px;} 
 .star-act-2.star-act {background-position: 100% -75px;} 
 .star-act-3.star-act {background-position: 100% -50px;} 
