@@ -187,6 +187,17 @@ $(document).ready(function(){
 		return false;
 	});
 
+	$('.hide_details-open').click(function(){
+		if($(this).hasClass('active')) {
+			$(this).removeClass('active');
+			$('.calculate-open').slideUp();
+		} else {
+			$(this).addClass('active');
+			$('.calculate-open').slideDown();
+		};
+		return false;
+	})
+
 
 
 

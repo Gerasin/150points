@@ -809,7 +809,7 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .high_end {position: absolute;top: 146px;left: 599px; text-align: left; color: #e10a19; font-size: 15px; line-height: 26px; font-family: 'GothamPro-Bold'; text-transform: uppercase;}
         .low_end strong, .mid_range strong, .high_end strong {font-size: 24px; position: relative; display: block;}
     .mid_range-h {position: absolute; top: -27px; left: 0; font-size: 15px; text-transform: uppercase; font-family: 'GothamPro-Bold';}
-    .mid_range-mon {position: absolute; top: -6px; left: 0; font-size: 24px; font-family: 'GothamPro-Bold'; padding-right: 8px;background: #fff;}
+    .mid_range-mon {position: absolute; top: -6px; left: 0; font-size: 24px; font-family: 'GothamPro-Bold'; padding-right: 8px;background: #fff; z-index: 20;}
         .mid_range-mon:before {position: absolute; content: ' '; left: 100%; top: 16px; width: 135px; border-top: 2px solid #ccc;}
 .calculate_cost {background: #edf6f9; padding: 20px; margin: 0 0 20px;}
     .calculate_cost-h {padding: 0 0 0 52px; margin-left: 3px; height: 40px; background: url(../img/calculate-ico.png) 0 center no-repeat; font: normal 24px/40px 'GothamPro-Bold'; color: #c8d6db; float: left;}
@@ -861,7 +861,27 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
         -moz-border-radius: 16px;
         border-radius: 16px;
     }
+.hide_details-open {text-align: center; position: relative; margin-top: 15px; display: none;}
+    .hide_details-open a {display: inline-block; text-decoration: none; padding: 0 25px 0 11px; background: #edf6f9; position: relative; font-size: 13px; color: #888; z-index: 10; position: relative;}
+    .hide_details-open:before {position: absolute; top: 13px; left: 0; right: 0; content: ' '; border-top: 1px solid #d2dbde; z-index: 1;}
+    .hide_details-open a:before {position: absolute; top: 8px; right: 12px; content: ' ';
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-top: 3px solid #a7a9ab;}
+    .active.hide_details-open a:before {
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-top: 0;
+        border-bottom: 3px solid #a7a9ab;
+    }
+.calculate-mobile {display: none; width: 320px; margin-left: auto; margin-right: auto;}
+    .calculate-mobile div {height: 44px; margin: 0 0 6px; line-height: 44px; padding: 0 20px; font-size: 15px; font-weight: bold;}
+        .calculate-mobile div strong {display: block; float: right; font-size: 24px; height: 44px;}
+   .low_end-mob {color: #f2820a; background: url(../img/low_end-mob.png) 0 0 no-repeat; background-size: 100%;}
+   .mid_range-mob {color: #4ab14a; background: url(../img/mid_range-mob.png) 0 0 no-repeat; background-size: 100%;}
+   .high_end-mob {color: #e10a19; background: url(../img/high_end-mob.png) 0 0 no-repeat; background-size: 100%;}
 
+    
 
 
 @media screen and (max-width: 1200px) {
@@ -1053,8 +1073,11 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .cont-soc a.lnk_fb:before {left: 4px;}
     .cont-soc a {margin-right: 7px;}
     .footer-inner {margin-top: 20px;}
-    .calculate {display: none;}
     .calc-form-inp-h {width: 180px; padding-right: 0;}
+    .calculate {width: 700px; margin-left: auto; margin-right: auto;}
+    .calculate-cont {background: url(../img/calculate.png) center 0 no-repeat; width: 700px;}
+    .mid_range {left: 227px;}
+    .high_end {left: 549px;}
 
 }
 
@@ -1088,6 +1111,21 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .calculate_cost-h {margin-bottom: 0;}
     .head-padding {height: 70px;}
     .company-txt-name {padding-bottom: 4px;}
+    .search-header {text-align: center; margin-top: 15px;}
+    .mid_range-h {right: 0; text-align: center; text-transform: inherit; top: 11px; z-index: 20;}
+    .mid_range-mon {display: none;}
+    .calculate-cont {background: url(../img/calculate_mob.png) 0 0 no-repeat; width: 320px; margin-top: -35px;}
+    .low_end, .mid_range, .high_end {font-size: 0;}
+    .low_end strong, .mid_range strong, .high_end strong {font-size: 16px;}
+    .low_end {width: auto; text-align: left; left: 5px; top: 104px;}
+    .high_end {width: auto; text-align: left; left: auto; right: 5px; top: 104px;}
+    .mid_range {width: 200px; left: 60px; top: 5px; text-align: center;}
+    .calculate-cont {height: 213px;}
+    .calculate {height: 215px;}
+    .calculate-mobile {display: block;}
+    .calculate-wr {margin: 0 -20px 20px;} 
+    .calculate {width: auto;}
+
 
 }
 
@@ -1134,6 +1172,16 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .head.head-inner.active .logo {display: block;}
     .head.head-inner.active .head-center {padding-top: 0;}
     .search-result .company-text {margin-left: 23px;}
+    .calculate-form-inp select {width: 100%;}
+    .calc-form-inp-h {float: none; width: auto;}
+    .calc-form-inp input {float: none; width: 100%;}
+    .calc-form-inp {height: auto; padding: 0 30px 10px 0;}
+    .hide_details-open {display: block;}
+    .calculate-button {display: none !important;}
+    .calculate-search .st-btn {width: 100%;}
+     .calculate-open {padding-top: 0; margin-top: 0; border: 0;}
+     .calculate-input-h span {display: none;}
+     .calculate-input-h {min-width: 100px;}
     
 
 }
