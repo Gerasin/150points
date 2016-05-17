@@ -108,7 +108,10 @@ textarea {
 .inp-st-40 {background: #fff; outline: none; height: 40px; width: 100%; padding: 0 0 0 20px; border: 0; vertical-align: middle; font: normal 16px 'GothamPro';
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;}
 input {font: normal 16px 'GothamPro' !important;}
 .textarea-st {
     background: #fff;
@@ -254,6 +257,9 @@ body {font-family: 'GothamPro';}
             .example_projects a:hover {text-decoration: none;}
             .example_projects span {padding: 0 10px;}
     .scroll-btn {position: absolute; z-index: 10; bottom: 30px; left: 50%; margin: 0 0 0 -15px; width: 30px; height: 92px; background: url(../img/scroll-btn.png) 0 0 no-repeat;}
+
+
+
 
 .service-content {padding: 58px 20px 58px;}
     .service-wr {max-width: 1170px; margin: 0 auto;}
@@ -883,7 +889,104 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
    .mid_range-mob {color: #4ab14a; background: url(../img/mid_range-mob.png) 0 0 no-repeat; background-size: 100%;}
    .high_end-mob {color: #e10a19; background: url(../img/high_end-mob.png) 0 0 no-repeat; background-size: 100%;}
 
+.error_page {padding: 120px 0 30px; vertical-align: top; text-align: center;}
+    .error_page_l {display: inline-block; font: normal 340px/340px 'GothamPro-Bold'; color: #ededed; vertical-align: top;}
+    .error_page_r {display: inline-block; margin-left: -280px; font: normal 100px/340px 'GothamPro-Bold'; color: #0ca4dd; vertical-align: top;}
+.error_comment {text-align: center; font-size: 24px; padding: 15px 0 35px;}
+.error_btn {text-align: center;}
+.error_btn a {float: none; color: #fff; margin: 0 15px; padding: 0 27px; height: 40px; line-height: 42px; font-family: 'GothamPro-Bold';}
+.error_page_404_r {margin-left: -377px;}
+
+.congratulations {padding: 50px 0 5px;text-align: center;} 
+    .congratulations h2 {font: normal 60px/70px 'GothamPro-Bold';margin: 0 0 8px;color: #111;}
+    .congratulations h3 {font-size: 24px;margin: 0 0 13px;font-weight: normal;}
+    .congratulations p {font-size: 15px;line-height: 22px;margin: 0 0 15px;}
+.congratulations .congratulations {float: none;color: #fff;margin: 10px 15px 50px; text-transform: uppercase; padding: 0 27px;height: 40px;line-height: 42px;font-family: 'GothamPro-Bold';}
+.congratulations--in {text-align: left; padding-left: 200px;}
+.congratulations-code {background: #ededed;padding: 20px 5px 0;font-size: 0;margin: 25px 0 0 200px;}
+    .congratulations-item {padding: 0 15px 14px; text-align: left;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;}
+        .code_img {float: left; width: 140px;}
+            .code_img img {max-width: 100%; vertical-align: top;}
+        .code_form {margin: 0 0 0 150px; padding: 0; font-size: 13px; line-height: 20px; color: #888;}
+            .code_form textarea {border: 0; padding: 10px 12px; margin: 0; font: normal 13px/20px 'GothamPro'; overflow: hidden; width: 100%; height: 140px; resize: none;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;}
+.page_bg {background: #ededed; padding: 27px 30px 20px;}
+.form_item {margin: 0 0 15px; max-width: 800px;}
+    .form_header {float: left; width: 200px; padding-top: 9px; font-family: 'GothamPro-Bold';}
+    .form_input {margin: 0 0 0 200px;}
+        select.select_width {width: 100%;}
+    .inp-st-width-min {width: 100px;}
+    .form_input textarea {width: 100%; height: 150px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;} 
+    .form_item .custom-select .custom-text, .form_item .custom-select.disabled span.custom-text:hover {height: 38px; line-height: 40px;}
+    .form_item .custom-select .custom-text:after {top: 11px;}
+    .form_item .custom-select {height: 40px;}
+    .form_input-sel {margin-right: 190px;}
+    .form_item .custom-text {padding-left: 18px; color: #000;}
+    .form_item .custom-text:hover {color: #4ab14a;}
+    .form_item .select-list li {color: #000;}
+    .form_item .select-list .selected, .form_item .select-list li:hover {color: #4ab14a;}
+    .form_item .custom-select li {padding-left: 8px;}
+    .form_item .inp-st-40:hover, .form_item .inp-st-40:focus  {color: #4ab14a;}
+    .form_select {width: 180px; float: right;}
+        .form_select select {width: 100%;}
+.down_img {margin: 0 0 28px;}
+    .down_img--left {float: left; padding-right: 40px;}
+    .down_img--h {font: normal 15px/20px 'GothamPro-Bold';float: left;width: 130px;padding: 71px 0 0;}
+    .down_img--btn {float: left;width: 170px;padding: 60px 40px 0 0;}
+        .down_img--left .down_img--h, .down_img--left .down_img--btn {float: none; padding: 0 0 10px;}
+        .down_img--btn span {display: block; height: 40px; position: relative; cursor: pointer; display: block; padding: 0 0 0 15px; background: #0ca4dd; text-decoration: none; color: #fff; font-size: 15px; line-height: 40px;}
+        .down_img--btn span:hover {background: #0db1ef;} 
+        .down_img--btn span:active {background: #0b93c6;} 
+            .down_img--btn span:before {content: ' '; position: absolute; top: 13px; right: 12px; width: 14px; height: 14px; background: url(../img/ico_plus.png) 0 0 no-repeat;}
+        .down_img--btn input {position: absolute; opacity: 0; top: 0; right: 0; width: 200px; height: 50px; cursor: pointer;}
+    .down_img-box {float: left; width: 100px;}
+        .down_img-box img {max-width: 98px; border: 1px solid #cdcdcd;}
+    .down_img--form {margin: -3px 0 0 341px;}
+        .down_img--form .textarea-st {height: 81px;}
+.down_img-logo {border-bottom: 1px solid #cdcdcd; padding-bottom: 29px; margin-bottom: 29px;}
+    .down_img-logo .down_img-box {width: 170px;}
+        .down_img-logo .down_img-box img {max-width: 100%; margin: 0;}
+    .down_img-logo .down_img--left {padding-top: 47px;}
+.profile_btn {margin: 20px 0 0; text-align: right;}
+    .profile_btn a {float: none; color: #fff; margin: 0 0 10px 20px; text-transform: uppercase; padding: 0 27px; height: 40px; line-height: 42px; font-family: 'GothamPro-Bold';}
+    .profile_btn a.st-btn-gray {background: #b6b6b6;}
+    .profile_btn a.st-btn-gray:hover {background: #c0c0c0;}
+    .profile_btn a.st-btn-gray:active {background: #bbbbbb;}
     
+.page_bg {padding: 10px 20px 20px;}
+.form_item {margin-bottom: 10px;}
+
+.progress {height: 20px; margin-bottom: 20px; overflow: hidden; background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1); }
+.progress-bar-success { background-color: #5cb85c; }
+.progress-bar {float: left; width: 0; height: 100%; font-size: 12px; line-height: 20px; color: #fff; text-align: center; background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;}
+
+body div.tagsinput{background:#FFF;padding:5px;width:auto !important;height:100px;overflow-y:auto;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;}
+div.tagsinput span.tag{-moz-border-radius:2px;-webkit-border-radius:2px;display:block;float:left;padding:5px;text-decoration:none;background:#e0eaf1;color:#46799b;margin-right:5px;margin-bottom:5px;font-family:helvetica;font-size:13px}
+div.tagsinput span.tag a{font-weight:700;color:#46799b;text-decoration:none;font-size:13px}
+div.tagsinput input{width:80px;margin:0 5px 5px 0;font-family:helvetica;border:1px solid transparent;padding:5px;background:0 0;color:#000;outline:0}
+div.tagsinput div{display:block;float:left}
+.tags_clear{clear:both;width:100%;height:0}
+.not_valid{background:#FBD8DB!important;color:#90111A!important}
+
 
 
 @media screen and (max-width: 1200px) {
@@ -897,6 +1000,10 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .calc_clear {display: block;}
     .calculate-input-box {padding: 0 35px 0 0;}
     .calculate_cost-h {margin-bottom: 20px;}
+    .error_page_l {font-size: 280px;}
+    .error_page_r {font-size: 80px; margin-left: -230px;}
+    .error_page_r.error_page_404_r {margin-left: -313px;}
+    .congratulations-item {display: block; width: 100%;}
 
 
 }
@@ -1060,7 +1167,7 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .page-tabs {height: auto; border: 0; margin-bottom: 10px;}
         .page-tabs li {float: none; height: auto; padding: 0;}
     .mobile-select {display: block;}
-    .page-tabs ul {position: absolute; right: 20px; left: 20px; border: 2px solid #a4d8a4; background: #fff; padding: 0; display: none;
+    .page-tabs ul {position: absolute; right: 20px; left: 20px; border: 2px solid #a4d8a4; background: #fff; padding: 0; display: none; z-index: 50;
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;}
@@ -1080,6 +1187,13 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .calculate-cont {background: url(../img/calculate.png) center 0 no-repeat; width: 700px;}
     .mid_range {left: 227px;}
     .high_end {left: 549px;}
+    .error_page_l {font-size: 173px; line-height: 200px;}
+    .error_page_r {font-size: 51px; margin-left: -152px; line-height: 200px;}
+    .error_page_r.error_page_404_r {margin-left: -197px;}
+    .error_page {padding: 20px 0 30px;}
+    .congratulations--in {padding-left: 0;}
+    .congratulations-code {margin-left: 0;}
+    .form_input select {height: 40px;}
 
 }
 
@@ -1127,6 +1241,26 @@ input[type='radio']:checked + label:before {background-position: 0 0;}
     .calculate-mobile {display: block;}
     .calculate-wr {margin: 0 -20px 20px;} 
     .calculate {width: auto;}
+    .error_page_l {font-size: 120px; line-height: 120px;}
+    .error_page_r, .error_page_r.error_page_404_r {margin: 0; font-size: 30px; line-height: 40px; display: block;}
+    .error_comment {text-align: center; font-size: 13px; padding: 8px 0 26px;}
+    .error_btn a {margin-bottom: 15px;}
+    .error_page {padding-bottom: 0;}
+    .congratulations h2 {font-size: 27px; line-height: 35px;}
+    .congratulations h3 {font-size: 17px; line-height: 21px;}
+    .congratulations p {font-size: 12px; line-height: 18px;}
+    .congratulations .congratulations {margin: 1px 0 25px;}
+    .code_img {float: none; margin-bottom: 10px;}
+    .code_form {margin: 0;}
+    .code_form textarea {height: 240px;}
+    .congratulations {padding-top: 10px;}
+    .form_header {float: none; width: auto;}
+    .form_input {margin: 0;}
+    .down_img--h {padding: 0 0 10px; float: none;}
+    .down_img--btn {float: none; padding: 0 0 10px;}
+    .down_img--form {margin: 0;}
+    .down_img-box {float: none;}
+    .down_img {margin: 0 0 18px;}
 
 
 }

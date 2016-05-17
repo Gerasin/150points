@@ -105,8 +105,8 @@
                         <a href="" class="lnk-setting mobile-hide">Edit</a>
                         <div class="mobile-select">Overview</div>
                         <ul>
-                            <li class="active"><a href="#id_overview">Overview</a></li>
-                            <li><a href="#id_reviews">Reviews</a></li>
+                            <li class="active"><a href="#id_overview" class="overview_open">Overview</a></li>
+                            <li><a href="#id_reviews" class="reviews_open">Reviews</a></li>
                             <li><a href="">Projects</a></li>
                             <li><a href="">Statistics</a></li>
                         </ul>
@@ -246,7 +246,10 @@
                 </div>
                 <div class="page-cont-right">
                     <div class="company-rating">
-                        <a href="" class="st-btn btn-yellow">Leave a review</a>
+                        <div class="btn_tab">
+                            <div class="btn_tab-i"><a href="" class="st-btn">Claim this business</a></div>
+                            <div class="btn_tab-i"><a href="" class="st-btn btn-yellow">Leave a review</a></div>
+                        </div>
                         <div class="clearfix"></div>
                         <div class="rating-namber"><span>145</span> / 150</div>
                         <p>Trust &amp; Transparency Score</p>
@@ -416,6 +419,17 @@
         <script src="js/slick.js"></script>
         <script src="js/jquery.selectik.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            $('.btn_tab-i:not(:first)').hide();
+            $('.overview_open').on( "click", function() {
+                $('.btn_tab-i').hide();
+                $('.btn_tab-i').eq(0).show();
+            });
+            $('.reviews_open').on( "click", function() {
+                $('.btn_tab-i').hide();
+                $('.btn_tab-i').eq(1).show();
+            });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

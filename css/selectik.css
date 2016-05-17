@@ -142,7 +142,7 @@
 	cursor:				default
 	}
 .select-scroll{
-	background-color:	#73b0e2;
+	background-color:	#5cdd5c;
 	width:				12px;
 	-webkit-border-radius:2px;
 	-moz-border-radius: 2px;
@@ -151,7 +151,7 @@
 .scroll-drag{
 	top:				0;
 	width:				10px;
-	background-color:	#14609e;
+	background-color:	#4ab14a;
 	-webkit-border-radius:2px;
 	-moz-border-radius: 2px;
 	border-radius: 		2px; 

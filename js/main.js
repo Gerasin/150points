@@ -79,7 +79,8 @@ $(document).ready(function(){
 
 
  	$('select').selectik({
-		minScrollHeight: 20
+		minScrollHeight: 20,
+		maxItems: 8
 	});
 
 	$('.search-mob').click(function(){
@@ -199,6 +200,7 @@ $(document).ready(function(){
 	})
 
 
+	$('#tags').tagsInput();
 
 
 
