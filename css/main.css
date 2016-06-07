@@ -986,8 +986,20 @@ div.tagsinput input{width:80px;margin:0 5px 5px 0;font-family:helvetica;border:1
 div.tagsinput div{display:block;float:left}
 .tags_clear{clear:both;width:100%;height:0}
 .not_valid{background:#FBD8DB!important;color:#90111A!important}
-
-
+.popup_btn {display: inline-block; padding: 0 35px; height: 60px;  background: #4ab14a; border: 0; font: normal 18px/60px 'GothamPro-Bold'; color: #fff !important; margin: 0 8px 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 2px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 2px rgba(0,0,0,.15);
+    box-shadow: 0 2px rgba(0,0,0,.15);}
+.popup_bussiness {width: 700px; margin-left: -350px;}
+.btn_blue {background: #20a5db;}
+.btn_blue:hover {background: #40aedb;}
+.btn_blue:active {background: #009cdb;}
+.popup-txt {border-top: 1px solid #cdcdcd; border-bottom: 1px solid #cdcdcd; padding: 30px 0 40px; margin: 0 0 30px; line-height: 26px; font-size: 15px;}
+.verification-inp {display: inline-block; width: 252px; margin-right: 7px;}
+.verification {line-height: 40px; padding: 15px 0 0;}
 
 @media screen and (max-width: 1200px) {
 
@@ -1261,7 +1273,7 @@ div.tagsinput div{display:block;float:left}
     .down_img--form {margin: 0;}
     .down_img-box {float: none;}
     .down_img {margin: 0 0 18px;}
-
+    .popup_btn {padding: 0 7px; display: block; margin: 0 0 10px;}
 
 }
 
